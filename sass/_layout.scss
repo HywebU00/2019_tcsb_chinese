@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+//變數
+$_primaryColor:#367c8d;			   //主色
+$_secondaryColor:#268725;			   //輔色
+$_lightColor:#7accd1;	
+$_linkColor:#94cd89;
+$_aColor:darken($_primaryColor,15);				//連結顏色
+$_aHover:darken($_secondaryColor,15);		//移入顏色
+$_explanation:lighten($_lightColor, 20);    //說明背景
+$_cpaColor:darken($_primaryColor,25);	//連結顏色（深）
+$_darkColor:#0b0d0c;
+$color-blue: #3577bd;
+$color-red: #e30000;
+$color-orange: #be5500;
+$color-yellow: #fdb300;
+// 基本版型
+body{
+	font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;
+	position: relative;
+	// font-family:"Graphik-Extralight", "PingFangTC-Thin", "Noto Sans TC Thin";
+	&.noscroll{
+		overflow: hidden;
+
+	}
+}
+.goCenter{
+	position: absolute;
+	top:5px;
+	left:50px;
+	color: #000;
+	z-index: 9999;
+	border:1px solid #fff;
+	padding:0px 10px;
+	opacity: 0;
+}
+.goCenter:focus, .goCenter:hover{
+		opacity: 1;
+		color: #000;
+		background-color: #fff;
+	}
+
+.navbar{
+	margin-bottom: 0px;
+}
+.container{
+	// width: 100%;
+
+	// background:#FFF;
+	// border:1px solid red;
+}
+@media (max-width: 991px) {
+	.container{
+		width: 100%;
+
+	}
+}
+.welcome_container{
+	width: 100%;
+	padding: 0px;
+	background:#FFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+// @media (max-width: 991px) {
+// 	.container{
+// 		width: 100%;
+// 		border:none;
+// 	}
+// }
+
+
+.more{
+	clear: both;
+	text-align: center;
+}
+.btn-more{
+	display:block;
+	width:30%;
+	max-width:350px;
+	border-color: #DDD;
+	background-color: #DDD;
+	color:#333;
+	padding:10px 0;
+	margin:20px auto;
+	font-size: 1em;
+	transition: 0.5s;
+	@media(max-width:480px){
+		width: 50%;
+		max-width:350px;
+	}
+	&:hover,&:focus{
+		color:#FFF !important;
+		border-color: darken($_aColor,10);
+		background-color: $_aColor;
+	}
+}

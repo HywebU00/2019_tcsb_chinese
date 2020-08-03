@@ -1,0 +1,40 @@
+@charset "utf-8";
+.np p {
+    padding:0px;
+    
+}
+
+
+/*-*/
+
+.nplist {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 0 0 10px 0;
+        padding: 7px 0 7px 40px;
+        border-bottom: 1px solid #ccc;
+        background-image: url(../images/link_icon01.png);
+        background-repeat: no-repeat;
+        background-position: 13px 17px;
+        a {
+            display: block;
+        }
+        ul {
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+            li {
+                background-image: url(../images/np_icon01.gif);
+                background-position: 0 18px;
+                border: none;
+                padding: 7px 0 7px 30px;
+            }
+        }
+    }
+}
+
+
+
+

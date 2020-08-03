@@ -1,0 +1,13 @@
+@charset "utf-8";
+.breadcrumb{
+	padding:4px 0;
+	font-size:.938em;
+	background:#fff;
+	i{
+		opacity:.5;
+		margin-right: 5px;
+	}
+	>.active{
+		color:$_primaryColor;
+	}
+}

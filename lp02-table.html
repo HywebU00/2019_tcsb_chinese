@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>行政院環境保護署毒物及化學物質局</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/module/bootstrap-3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/module/bootstrap-3.3.2/css/bootstrap-theme.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- mega menu-->
+    <link rel="stylesheet" href="assets/css/megamenu.css">
+    <!-- slick 輪播-->
+    <link rel="stylesheet" href="assets/module/slick/slick.css">
+    <link rel="stylesheet" href="assets/module/slick/slick-theme.css">
+    <!--fontello icon font -->
+    <link rel="stylesheet" href="assets/module/fontello/css/fontello.css">
+    <!-- 自訂CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.offcanvas.css">
+    <link rel="stylesheet" href="css/design.css">
+</head>
+
+<body><a class="goCenter" href="#mainContent" tabindex="2">按 Enter 到主內容區</a>
+    <!-- header -->
+    <section id="Header">
+        <div class="accesskey hidden-xs"><a href="#" title="header" id="accesskeyU" accesskey="U" tabindex="1">:::</a></div>
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <!--手機收合選單-->
+                    <div class="navbar-header">
+                        <!-- 左側 -->
+                        <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left"> <span class="sr-only">Toggle navigation</span><i class="icon-menu"></i> </button>
+                        <a class="Logo" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"> </a>
+                        <!-- 右側 -->
+                        <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#offcanvas-right"> <span class="sr-only">Toggle navigation</span><i class="icon-search"></i> </button>
+                    </div>
+                    <!--其他選單 收合右側-->
+                    <div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
+                        <div class="Navigation">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">網站導覽</a></li>
+                                <li><a href="#">環保e言堂(局長信箱)</a></li>
+                                <li><a href="#">常見問題</a></li>
+                                <li><a href="#">網站導覽</a></li>
+                                <!-- <li><a href="#">RSS</a></li>
+                    <li><a href="#">English</a></li> -->
+                            </ul>
+                        </div>
+                        <!--search-->
+                        <div class="Search">
+                            <div class="accesskey hidden-xs"><a href="#aS" id="aS" accesskey="S" title="站內搜尋">:::</a></div>
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="全站搜尋">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn"> <span class="glyphicon glyphicon-search"></span> </button>
+                                        <!--  <button type="button" class="btn advance"> 進階查詢 </button> -->
+                                    </span><span class="advance"><a href="javascript:;">進階查詢</a></span> </div>
+                                <div class="HotKeywords"> 熱門關鍵字： <a href="#">申報</a> <a href="#">毒物化諮詢</a> <a href="#">三聚氰胺</a> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--主選單  收合左側-->
+                <div class="collapse navbar-collapse" id="offcanvas-left" role="navigation">
+                    <div class="MainMenu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <!--First-->
+                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">關於本局<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" title="">本局沿革 </a></li>
+                                    <li><a href="#" title="">本局願景</a></li>
+                                    <li><a href="#" title="">組織介紹</a></li>
+                                    <li><a href="#" title="">本局願景</a></li>
+                                    <li><a href="#" title="">局處執掌</a></li>
+                                    <li><a href="#" title="">重大政策</a></li>
+                                    <li><a href="#" title="">施政重點</a></li>
+                                    <li><a href="#" title="">本局位置</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown ">
+                                <!--First-->
+                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">訊息公告<b class="caret"></b></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <!--second-->
+                                    <li><a href="#" title="">本局公告</a></li>
+                                    <li><a href="#" title="">環保署公告</a></li>
+                                    <li><a href="#" title="">環境用藥公告</a></li>
+                                    <li><a href="#" title="">環保專案成果報告</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <!--First-->
+                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">業務專區<b class="caret"></b></a>
+                                <ul class="dropdown-menu ">
+                                    <li class="dropdown dropdown-submenu"><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown">毒性化學物質</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" title="">毒性化學物質簡介</a></li>
+                                            <li><a href="#" title="">毒性化學物質分類管理架構</a></li>
+                                            <li><a href="#" title="">毒性化學物質一覽表及運作管理事項</a></li>
+                                            <li><a href="#" title="">毒性化學物質安全資料表及GHS</a></li>
+                                            <li><a href="#" title="">毒性化學物質專業技術管理人員</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown">化學物質登錄</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#" title="">毒性化學物質簡介</a></li>
+                                            <li><a href="#" title="">毒性化學物質分類管理架構</a></li>
+                                            <li><a href="#" title="">毒性化學物質一覽表及運作管理事項</a></li>
+                                            <li><a href="#" title="">毒性化學物質安全資料表及GHS</a></li>
+                                            <li><a href="#" title="">毒性化學物質專業技術管理人員</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" title="">勾稽查核與輔導訪查</a></li>
+                                    <li><a href="#" title="">危害性化學物質災害防救</a></li>
+                                    <li><a href="#" title="">環境用藥管理</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <!--First-->
+                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">便民服務<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" title="">線上服務</a></li>
+                                    <li><a href="#" title="">教育宣導</a></li>
+                                    <li><a href="#" title="">影音專區</a></li>
+                                    <li><a href="#" title="">下載專區</a></li>
+                                    <li><a href="#" title="">常見問答</a></li>
+                                    <li><a href="#" title="">相關連結</a></li>
+                                    <li><a href="#" title="">訂閱電子報</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <!--First-->
+                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">政府資訊公開<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" title="">行政院環境保護署資訊公開要點</a></li>
+                                    <li><a href="#" title="">預算及會計月報</a></li>
+                                    <li><a href="#" title="">性別平等專區</a></li>
+                                    <li><a href="#" title="">人權專區</a></li>
+                                    <li><a href="#" title="">環境統計資料庫</a></li>
+                                    <li><a href="#" title="">業務標準作業流程</a></li>
+                                    <li><a href="#" title="">行政院環保署Open Data資料集</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <!--First-->
+                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">法規專區<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" title="">主管法規查詢系統 </a></li>
+                                    <li><a href="#" title="">全國法規資料庫</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </section>
+    <!-- 內容開始 -->
+    <div class="MainContent" id="mainContent">
+        <!--內頁 start -->
+        <div class="Block_incontent">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class=" col-md-12">
+                        <!--右欄資訊 start -->
+                        <div class="accesskey"><a href="#" title="中央內容區塊" accesskey="C">:::</a></div>
+                        <ol class="breadcrumb">
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">訊息公告</a></li>
+                            <li class="active">就業資訊</li>
+                        </ol>
+                        <!--lp start -->
+                        <section class="lp">
+                            <h1>就業資訊</h1>
+                            <!--topfunction -->
+                            <div class="topfunction">
+                                <ul>
+                                    <li><a href="#" class="rss">RSS訂閱</a></li>
+                                    <li><a href="#" class="condition">條件查詢</a></li>
+                                </ul>
+                            </div>
+                            <!--分類 start -->
+                            <nav class="category">
+                                <ul>
+                                    <li class="here"><a href="#">全部</a></li>
+                                    <li><a href="#">臺北市</a></li>
+                                    <li><a href="#">新北市</a></li>
+                                    <li><a href="#">澎湖縣</a></li>
+                                    <li><a href="#">其他</a></li>
+                                </ul>
+                            </nav>
+                            <!--分類 end -->
+                            <!--listTb start -->
+                            <section class="listTb">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">職稱</th>
+                                            <th scope="col">徵才機關</th>
+                                            <th scope="col">工作地點</th>
+                                            <th scope="col">有效期間(迄)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">1</td>
+                                            <td data-title="職稱"><a href="#">專員</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter date">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">2</td>
+                                            <td data-title="職稱"><a href="#">副技師</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">3</td>
+                                            <td data-title="職稱"><a href="#">助理人員</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">4</td>
+                                            <td data-title="職稱"><a href="#">聘用人員（職務代理）</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">5</td>
+                                            <td data-title="職稱"><a href="#">專員</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">6</td>
+                                            <td data-title="職稱"><a href="#">106-人事人員職代自傳表</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">7</td>
+                                            <td data-title="職稱"><a href="#">應徵簡任第10-11專門委員/薦任第9職等主管及非主管人事人員職缺者請下載此附件</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">8</td>
+                                            <td data-title="職稱"><a href="#">應徵人事人員職缺者請下載此附件</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">9</td>
+                                            <td data-title="職稱"><a href="#"> 職員離職手續清理單</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="No" class="aCenter">10</td>
+                                            <td data-title="職稱"><a href="#">一般人員</a></td>
+                                            <td data-title="徵才機關" class="aCenter">毒物及化學物質局</td>
+                                            <td data-title="工作地點" class="aCenter">臺北市</td>
+                                            <td data-title="有效期間(迄)" class="aCenter">105-06-06~105-06-16</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <!--listTb  end -->
+                            <!--page start -->
+                            <section class="page"><span class="data"> 共<em>308</em>筆資料，第<em>1/18</em>頁，</span>
+                                <ul class="number">
+                                    <li class="first"><a title="第一頁" href="#">
+                                            << </a> </li> <li class="prev"><a title="上1頁" href="#">
+                                                    < </a> </li> <li class="here"><a href="#" title="1">1</a></li>
+                                    <li class="hidden-xs"><a href="#" title="2">2</a></li>
+                                    <li class="hidden-xs"><a href="#" title="3">3</a></li>
+                                    <li class="hidden-xs"><a href="#" title="4">4</a></li>
+                                    <li class="hidden-xs"><a href="#" title="5">5</a></li>
+                                    <li class="next"><a title="下1頁" href="#"> > </a></li>
+                                    <li class="last"><a title="最後一頁" href="#"> >> </a></li>
+                                </ul>
+                                <span class="items">每頁顯示 <a href="#">20</a> <a href="#">40</a> <a href="#">60</a>
+                                    </ul> 筆 </span>
+                            </section>
+                            <!--page  end -->
+                            <!--bottomfunction start -->
+                            <div class="bottomfunction">
+                                <div class="share2"><span>分享</span>
+                                    <ul>
+                                        <li><a href="#" class="fb"><img src="images/share2_01.png" alt="facebook"></a></li>
+                                        <li><a href="#" class="google"><img src="images/share2_02.png" alt="google"></a></li>
+                                        <li><a href="#" class="twitter"><img src="images/share2_03.png" alt="twitter"></a></li>
+                                        <li><a href="#" class="line"><img src="images/share2_04.png" alt="line"></a></li>
+                                        <li><a href="#" class="forward"><img src="images/share2_05.png" alt="轉寄友人"></a></li>
+                                        <li><a href="#" class="print"><img src="images/share2_06.png" alt="列印"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="data">
+                                    <ul>
+                                        <li>點閱次數：1,231</li>
+                                        <li>最近更新日期：105-05-10</li>
+                                        <li><a href="#">回上一頁</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--bottomfunction end -->
+                        </section>
+                        <!--lp end -->
+                        <!--右欄資訊 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--內頁 end -->
+    </div>
+    <!-- 內容結束 -->
+    <!-- fatfooter -->
+    <div id="FatFooter">
+        <input type="button" name="FatFooterBtn" id="FatFooterBtn" value="收合" class="btn pull-right FatFooterBtn">
+        <nav>
+            <ul>
+                <li><a href="#" title="">關於本局</a>
+                    <ul>
+                        <li><a href="#" title="">本局沿革 </a></li>
+                        <li><a href="#" title="">本局願景</a></li>
+                        <li><a href="#" title="">組織介紹</a></li>
+                        <li><a href="#" title="">本局願景</a></li>
+                        <li><a href="#" title="">局處執掌</a></li>
+                        <li><a href="#" title="">重大政策</a></li>
+                        <li><a href="#" title="">施政重點</a></li>
+                        <li><a href="#" title="">本局位置</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">訊息公告</a>
+                    <ul>
+                        <li><a href="#" title="">本局公告</a></li>
+                        <li><a href="#" title="">環保署公告</a></li>
+                        <li><a href="#" title="">環境用藥公告</a></li>
+                        <li><a href="#" title="">環保專案成果報告</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">業務專區</a>
+                    <ul>
+                        <li><a href="#" title="">化學物質</a></li>
+                        <li><a href="#" title="">毒性化學物質</a></li>
+                        <li><a href="#" title="">危害性化學物質災害防救</a></li>
+                        <li><a href="#" title="">環境用藥</a></li>
+                        <li><a href="#" title="">石綿危害資訊</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">便民服務</a>
+                    <ul>
+                        <li><a href="#" title="">線上服務</a></li>
+                        <li><a href="#" title="">教育宣導</a></li>
+                        <li><a href="#" title="">影音專區</a></li>
+                        <li><a href="#" title="">下載專區</a></li>
+                        <li><a href="#" title="">常見問答</a></li>
+                        <li><a href="#" title="">相關連結</a></li>
+                        <li><a href="#" title="">訂閱電子報</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">政府資訊公開</a>
+                    <ul>
+                        <li><a href="#" title="">行政院環境保護署資訊公開要點</a></li>
+                        <li><a href="#" title="">預算及會計月報</a></li>
+                        <li><a href="#" title="">性別平等專區</a></li>
+                        <li><a href="#" title="">人權專區</a></li>
+                        <li><a href="#" title="">環境統計資料庫</a></li>
+                        <li><a href="#" title="">業務標準作業流程</a></li>
+                        <li><a href="#" title="">行政院環保署Open Data資料集</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">法規專區</a>
+                    <ul>
+                        <li><a href="#" title="">主管法規查詢系統 </a></li>
+                        <li><a href="#" title="">全國法規資料庫</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">政府資訊公開</a>
+                    <ul>
+                        <li><a href="#" title="">行政院環境保護署資訊公開要點</a></li>
+                        <li><a href="#" title="">預算及會計月報</a></li>
+                        <li><a href="#" title="">性別平等專區</a></li>
+                        <li><a href="#" title="">人權專區</a></li>
+                        <li><a href="#" title="">環境統計資料庫</a></li>
+                        <li><a href="#" title="">業務標準作業流程</a></li>
+                        <li><a href="#" title="">行政院環保署Open Data資料集</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="">法規專區</a>
+                    <ul>
+                        <li><a href="#" title="">主管法規查詢系統 </a></li>
+                        <li><a href="#" title="">全國法規資料庫</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="web20"> <a href="javascript:;"><i class=" icon-youtube"></i></a> <a href="javascript:;"><i class="icon-facebook"></i></a> <a href="javascript:;"><i class="icon-mail-alt"></i></a> <a href="javascript:;"><i class=" icon-rss"></i></a> </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="Epaper">
+                    <h2>訂閱/取消電子報</h2>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="sr-only">請輸入電子信箱</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="請輸入電子信箱">
+                        </div>
+                        <button type="submit" class="btn btn-default">送出</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="Footer_link"> <a href="#" title="隱私權保護政策">隱私權保護政策</a> <a href="#" title="網站安全政策">網站安全政策</a> <a href="#" title="資訊安全規範(PDF檔)">資訊安全規範(PDF檔)</a> <a href="#" title="網站資料開放宣導">網站資料開放宣導</a> </div>
+                <div class="Footer_info">
+                    <p> 地址 : 106-67 臺北市大安區大安路二段132巷35弄1號 交通位置圖 <br />
+                        <i class="icon-phone"></i>電話 : (02)2325-7399<br />
+                        <i class="icon-phone"></i>24小時毒物與化學物質專業諮詢服務/049-2345678 <span class="UpdateTime">更新日期 : 105-12-24</span> <span class="Counter">訪客人次 : 0123456</span> </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="Footer_icon"> <a class="Accessible_icon" href="#" target="_blank"><img src="images/basic/accessibility.jpg" alt="無障礙2.0" class="img-responsive"></a> <a class="Egov" href="http://www.gov.tw/" title=""><img src="images/basic/egov.png" alt="E政府" class="img-responsive"></a> </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <a href="#" class="back_page icon-reply-1"></a> <a href="#" class="scrollToTop"></a>
+    <script src="assets/js/jquery-1.11.2.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/module/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.lazyload.min.js"></script>
+    <script src="js/BS3JS.min.js"></script>
+    <!-- slick  -->
+    <script src="assets/module/slick/slick.js"></script>
+    <!-- Sidebar選單 -->
+    <script src="assets/js/bootstrap.offcanvas.js"></script>
+    <!-- scrollUp-->
+    <script src="assets/js/jquery.scrollUp.js"></script>
+    <!-- jq-easing -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <!-- 全部自訂檔 -->
+    <script src="js/customize_scripts.js"></script>
+</body>
+
+</html>

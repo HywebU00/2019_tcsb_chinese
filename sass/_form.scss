@@ -1,0 +1,565 @@
+@charset "utf-8";
+/*---------form--------forward 、qp 、 */
+.forwardForm,
+.qp {
+    h3 {
+        margin: 0 0px 10px;
+        font-size: 1.25em;
+        font-weight: bold;
+        color: #F90;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        clear: both;
+        margin: 0 0 20px;
+        color: #313131;
+        background-color: #fff;
+        caption {
+            display: none;
+        }
+        th {
+            background-color: #e6e6e6;
+            color: #000;
+            text-align: right;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: nowrap;
+            font-weight: normal;
+            width: 20%;
+        }
+        td {
+            color: #313131;
+            border: 1px solid #CCC;
+            padding: 10px;
+            position: relative;
+            select {
+                border: 1px solid #ccc;
+                border-radius: 0;
+                padding: 3px 3px 6px;
+            }
+            .text2 {
+                border: 1px solid #ccc;
+                border-radius: 0;
+                padding: 4px 3px;
+                width: auto !important;
+            }
+            .text {
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 4px 3px;
+                &:focus {
+                    outline: 2px solid $color-yellow;
+                }
+            }
+            input {
+                vertical-align: middle;
+                margin: 0 0px 0 0;
+                font-size: 100%;
+                width: auto;
+            }
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                border-radius: 2px;
+            }
+            textarea {
+                width: 100%;
+                border: 1px solid #ccc;
+                padding: 0 3px;
+            }
+            a {
+                color: #006699;
+                text-decoration: none;
+                &:hover {
+                    color: #CC0000;
+                    text-decoration: none;
+                }
+            }
+            p {
+                margin: 10px 0;
+                display: block;
+            }
+            label {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px) {
+    .forwardForm table,
+    .forwardForm thead,
+    .forwardForm tbody,
+    .forwardForm th,
+    .forwardForm td,
+    .forwardForm tr,
+    .qp table,
+    .qp thead,
+    .qp tbody,
+    .qp th,
+    .qp td,
+    .qp tr {
+        display: block;
+    }
+    .forwardForm,
+    .qp {
+        table {
+            border: none;
+            border: 1px solid #ccc;
+            tr {
+                border-bottom: none;
+                margin: 0;
+            }
+            th {
+                width: 100%;
+                text-align: left;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                padding: 7px;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                padding-left: 2%;
+                .text,
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/*------------------------------------------------------------star*/
+.must {
+    color: #FF0000;
+    margin: 0px 5px 0 0;
+    font-size: 150%;
+    font-weight: bold;
+    vertical-align: bottom;
+    line-height: 110%;
+}
+/*--------------------------------------------------------------------------formBtn--*/
+.formBtn {
+    margin: 10px 0 30px;
+    text-align: center;
+    img {
+        vertical-align: middle;
+        margin: 0 5px;
+    }
+}
+.btn_color {
+    background-color: $_aColor;
+    position: relative;
+    border: 1px solid $_aColor;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    width: auto;
+    &:hover {
+        color: #fff;
+        background-color: $_cpaColor;
+        border: 1px solid $_cpaColor;
+    }
+    &:focus {
+        outline: 2px solid #ffc000;
+    }
+}
+.btn_lightgray {
+    background-color: #c9c9c9;
+    position: relative;
+    border: 1px solid #c9c9c9;
+    color: #333;
+    padding: 3px 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 5px 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    &:hover {
+        color: #000;
+        background-color: #b5b5b5;
+        border: 1px solid #b5b5b5;
+    }
+    &:focus {
+        outline: 2px solid #ffc000;
+    }
+}
+.btn_gray {
+    background-color: #7d7d7d;
+    position: relative;
+    border: 1px solid #7d7d7d;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+    font-family: "微軟正黑體";
+    font-size: 1.06em;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    width: auto;
+    &:hover {
+        background-color: #626262;
+        border: 1px solid #626262;
+    }
+}
+// -----------------------------------
+form {
+    textarea {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 6px 12px;
+        margin: 10px 0;
+        &:focus {
+            border: 1px solid $color-yellow;
+        }
+    }
+}
+input[type="checkbox"], input[type="radio"] {
+    font-size: 1em;
+    margin: 5px .2em 0 0;
+    width: 1em;
+    height: 1em;
+    background-color: #f7f6ee;
+    border: 2px solid #ccc;
+    &:focus {
+        border: 2px solid $color-yellow;
+    }
+}
+form {
+    .form_grp,
+    .check_grp,
+    .radio_grp,
+    .btn_grp,
+    .upload_grp {
+        margin-bottom: .2em;
+    }
+    .check_grp,
+    .radio_grp {
+        label {
+            display: block;
+        }
+        // radio與check個別行內設定
+        &.form_inline {
+            label {
+                display: inline-block;
+                margin: .2em .5em 0 0;
+            }
+            .form_title, .form_content {
+                display: inline-block;
+            }
+        }
+    }
+    .form_grp,
+    .upload_grp {
+        // 文字表單個別行內設定
+        &.form_inline {
+            label {
+                display: inline-block;
+                margin-right: .5em;
+            }
+            input,
+            textarea,
+            select {
+                width: auto;
+            }
+            .form_title, .form_content {
+                display: inline-block;
+            }
+            input[type="submit"] {
+                margin: 0 0 .3em 0;
+            }
+        }
+    }
+    // form 全域行內設定
+    &.form_inline {
+        label {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: .5em;
+            &~input,
+            &~textarea {
+                display: inline-block;
+                width: auto;
+                vertical-align: middle;
+            }
+        }
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: auto;
+            display: inline-block;
+        }
+        .form_grp,
+        .check_grp,
+        .radio_grp,
+        .btn_grp,
+        .upload_grp {
+            display: inline-block;
+            margin-right: .5em;
+        }
+        .form_title, .form_content {
+            display: inline-block;
+        }
+        .check_grp,
+        .radio_grp {}
+        .btn_grp {
+            .btn,
+            input[type="submit"],
+            input[type="reset"],
+            input[type="button"],
+            input[type="search"] {
+                margin-top: -3px;
+                padding: .45em 1em;
+            }
+        }
+        select,
+        textarea {
+            width: auto;
+        }
+    }
+}
+//---------------------------------------------下拉選單--------//
+label,
+legend {
+    // white-space: nowrap;
+    display: inline-block;
+    margin: 0 0 .5em 0;
+    &.inline {
+        input,
+        select,
+        textarea {
+            width: auto;
+        }
+    }
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+//---------------------------------------------預設設定--------//
+input,
+textarea,
+select,
+button {
+    &.error {
+        box-shadow: 0px 0px 0px 2px $color-yellow;
+        +.notice_warning {
+            background: none;
+            color: $color-yellow;
+            font-size: 1em;
+            margin: 0;
+            padding-left: 30px;
+        }
+    }
+}
+input,
+select,
+textarea {
+    width: 100%;
+    -webkit-appearance: none; //清除 safari 的預設樣式
+    -moz-appearance: none;
+    appearance: none;
+}
+//---------------------------------------------文字輸入表單--------//
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="tel"] {
+    &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: darken(#ccc, 20);
+    }
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: darken(#ccc, 20);
+    }
+    &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: darken(#ccc, 20);
+    }
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: darken(#ccc, 20);
+    }
+}
+// button,
+// input[type="button"],
+//     {
+//     @extend %btn;
+//     @include btn_setting($color-yellow, #FFF);
+// }
+// input[type="submit"] {
+//     @extend %btn;
+//     @include btn_setting($color-yellow, #FFF);
+// }
+input[type="text"]:focus,
+input[type="reset"]:focus,
+input[type="file"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid lighten($color-yellow, 10);
+    @include box-shadow(0px 0px 0px 2px lighten($color-yellow, 10));
+    outline: none;
+}
+//
+//---------------------------------------------下拉選單--------//
+select {
+    line-height: 2.4em;
+    height: 2.4em;
+    padding: 0 30px 0 .5em;
+    border: 1px solid #ccc;
+    background: #fff url(../images/basic/icon_select_arrow.png) no-repeat right 2px center;
+    background-size: 16px;
+    option {
+        outline: none;
+        border: none;
+    }
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+    }
+}
+//---------------------------------------------reset--------//
+input[type="reset"] {
+    text-shadow: none;
+}
+//---------------------------------------------checkbox & radio--------//
+input[type="checkbox"],
+input[type="radio"] {
+    font-size: 1em;
+    margin: 6px .2em 0 0;
+    width: 1em;
+    height: 1em;
+    background-color: #f7f6ee;
+    border: 2px solid #ccc;
+}
+input[type="radio"] {
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    border-color: $color-yellow;
+    background-color: $color-yellow;
+    outline: none;
+}
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+    outline: none;
+}
+input[type="checkbox"]:checked {
+    background-image: url(../images/basic/icon_checked.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 98%;
+    box-shadow: $color-yellow 0 0 0 1px;
+}
+input[type="radio"]:checked {
+    box-shadow: #fff 0 0 0 3px inset, #ddd 0 0 0 1px;
+}
+//---------------------------------------------readonly disable -------//
+input[readonly],
+input[disable] {
+    background: lighten(#ccc, 15);
+    color: darken(#ccc, 10);
+    border-color: darken(#ccc, 10);
+    &~label {
+        color: darken(#ccc, 10);
+    }
+    &:hover,
+    &:focus {
+        border-color: darken(#ccc, 10);
+        box-shadow: none; // cursor: not-allowed;
+    }
+}
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+//---------------------------------------------必填欄位說明--------//
+abbr[title] {
+    border-bottom: none;
+    text-decoration: none;
+}
+.form_content {
+    min-height: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &.hasBtn {
+        padding-right: 0;
+    }
+    .datepick {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        &+.datepick {
+            margin-left: 1em;
+            margin-right: 0;
+            padding-right: 0;
+            &:before {
+                content: "~";
+                font-size: 1.5em;
+                display: inline-block;
+                position: absolute;
+                left: -.65em;
+                top: .3em;
+                color: #777;
+            }
+            i {
+                right: .5em;
+            }
+        }
+        button {
+            position: absolute;
+            padding: .37em .1em !important;
+            right: 0em;
+            top: -.2em;
+            min-width: 1em;
+            background: none;
+            border: none;
+            width: auto;
+            pointer-events: none;
+            i:before {
+                width: 1.5em;
+                height: 1.5em;
+            }
+        }
+    }
+}
+.search_grp {
+    padding: 1em;
+    .form_grp,
+    .check_grp,
+    .radio_grp,
+    .btn_grp,
+    .upload_grp {
+        margin-bottom: .5em;
+    }
+}
