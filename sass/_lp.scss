@@ -74,7 +74,7 @@
             }
             span {
                 margin: 0 5px;
-                color: #999;
+                color: #367c8d;
                 &.number {
                     width: 20px;
                     margin: 0 15px 0 -35px;
@@ -185,7 +185,7 @@
     @media (max-width: 767px) {
         margin: 20px 0 0;
     }
-    h3 {
+    .title {
         margin: 0;
         padding: 0;
         font-size: 1.2em;
@@ -193,6 +193,7 @@
         height: 47px;
         line-height: 1.3em;
         overflow: hidden;
+        font-weight:bolder;
         @media (max-width: 767px) {
             height: inherit;
             overflow: inherit;
@@ -297,10 +298,11 @@
                     border-radius: 5px;
                 }
             }
-            h3 {
+            .title {
                 font-size: 1.375em;
                 margin: 0;
                 padding: 0;
+                font-weight: bolder;
                 a {
                     color: $_primaryColor;
                 }
@@ -332,7 +334,7 @@
             list-style: none;
             margin-bottom: 30px;
             .date {
-                background-color: #41b6bd;
+                background-color: $_primaryColor;
                 border-radius: 5px;
                 width: 100px;
                 padding: 40px 0 10px 0px;
@@ -379,9 +381,9 @@
                     line-height: 1.4em;
                     border-bottom: 1px solid #ccc;
                     a {
-                        color: #3ba4aa;
+                        color: $_primaryColor;
                         &:hover {
-                            color: $_primaryColor;
+                            color:$color-red;
                             text-decoration: none;
                         }
                     }
@@ -397,9 +399,9 @@
                 .beau {
                     margin: 0 0 7px;
                     padding: 0 15px 0 0;
-                    color: #467cb4;
+                    color: $color-blue;
                     span {
-                        background-color: #467cb4;
+                        background-color: $color-blue;
                         border-radius: 5px;
                         padding: 3px 15px;
                         margin-right: 10px;
@@ -409,9 +411,9 @@
                 .location {
                     margin: 0 0 15px;
                     padding: 0 15px 0 0;
-                    color: darken($_secondaryColor, 15);
+                    color: $_secondaryColor;
                     span {
-                        background-color: darken($_secondaryColor, 15);
+                        background-color: $_secondaryColor;
                         border-radius: 5px;
                         padding: 3px 15px;
                         margin-right: 10px;
@@ -672,7 +674,7 @@
                         object-fit: cover;
                     }
                 }
-                h3 {
+                .title {
                     margin: 0 5px;
                     padding: 0;
                     font-size: 1.063em;
@@ -681,6 +683,7 @@
                     line-height: 1.3em;
                     overflow: hidden;
                     display: block;
+                    font-weight: bolder;
                 }
                 &:hover {
                     text-decoration: none !important;
@@ -688,7 +691,7 @@
                         opacity: 1;
                         transform: scale(1.05, 1.05);
                     }
-                    h3 {
+                    .title {
                         text-decoration: none !important;
                         color: $_secondaryColor;
                     }

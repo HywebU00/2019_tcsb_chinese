@@ -143,22 +143,22 @@ $_activeColor:$_primaryColor;
                     border-radius: 3px;
                 }
                 .seminar {
-                    background: #3c7cb1;
+                    background: #4175b0;
                 }
                 .orientation {
-                    background: #7db52f;
+                    background: #4b8102;
                 }
                 .course {
-                    background: #ea510e;
+                    background: #cf4313;
                 }
                 .public-hearing {
-                    background: #4cbabf;
+                    background: #0f8287;
                 }
                 .other {
-                    background: #999;
+                    background: #757474;
                 }
                 .event {
-                    background: #eca000;
+                    background: #a06c00;
                 }
             }
             .apply-link, .cancel-link {
@@ -365,7 +365,7 @@ $_activeColor:$_primaryColor;
                         font-weight: bold;
                     }
                     .label {
-                        background: #f9710e;
+                        background: #be570d;
                         padding: 7px 15px;
                         font-size: 0.78em;
                         border-radius: 30px;
@@ -541,7 +541,7 @@ $_activeColor:$_primaryColor;
             }
             >p {
                 span {
-                    color: #eb5503;
+                    color: #cd4b04;
                     padding: 0 7px;
                 }
             }
@@ -551,7 +551,7 @@ $_activeColor:$_primaryColor;
         padding: 6px 0;
         .control-label {
             span {
-                color: #eb5503;
+                color: #cd4b04;
             }
         }
         select {

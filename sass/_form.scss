@@ -456,8 +456,8 @@ input[type="radio"] {
 }
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-    border-color: $color-yellow;
-    background-color: $color-yellow;
+    border-color: $color-orange;
+    background-color: $color-orange;
     outline: none;
 }
 input[type="checkbox"]:focus,
@@ -469,7 +469,7 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 98%;
-    box-shadow: $color-yellow 0 0 0 1px;
+    box-shadow: $color-orange 0 0 0 1px;
 }
 input[type="radio"]:checked {
     box-shadow: #fff 0 0 0 3px inset, #ddd 0 0 0 1px;
