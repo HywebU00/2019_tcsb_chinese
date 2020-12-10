@@ -193,7 +193,7 @@
         height: 47px;
         line-height: 1.3em;
         overflow: hidden;
-        font-weight:bolder;
+        font-weight: bolder;
         @media (max-width: 767px) {
             height: inherit;
             overflow: inherit;
@@ -275,7 +275,6 @@
                 width: 350px;
                 height: 200px;
                 text-align: center;
-
                 img {
                     max-width: 100%;
                     max-height: 100%;
@@ -311,7 +310,7 @@
                 overflow: hidden;
             }
             .assort {
-                background-color:$_secondaryColor;
+                background-color: $_secondaryColor;
                 color: #fff;
                 margin-bottom: 15px;
                 padding: 5px 10px;
@@ -383,17 +382,17 @@
                     a {
                         color: $_primaryColor;
                         &:hover {
-                            color:$color-red;
+                            color: $color-red;
                             text-decoration: none;
                         }
                     }
                 }
-                .apply_btn{
-                    float:right;
-                    margin:0 0 20px 10px;
-                    @media(max-width:400px){
-                        float:none;
-                        margin:0 0 10px 0;
+                .apply_btn {
+                    float: right;
+                    margin: 0 0 20px 10px;
+                    @media(max-width: 400px) {
+                        float: none;
+                        margin: 0 0 10px 0;
                     }
                 }
                 .beau {
@@ -428,8 +427,10 @@
                     margin: 0;
                     padding: 0;
                     overflow: hidden;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
                     li {
-                        float: left;
                         width: auto;
                         margin: 0 15px 15px 0;
                         padding: 0;
@@ -442,6 +443,35 @@
                             img {
                                 width: 100%;
                                 height: auto;
+                            }
+                        }
+                        a {
+                            color: $_primaryColor;
+                            position: relative;
+                            &.more {
+                                display: block;
+                                padding-right: 25px;
+                                padding-left: 10px;
+                                font-weight: bolder;
+                                transition: .5s;
+                                &:after {
+                                    content: '';
+                                    border: 8px solid $_primaryColor;
+                                    border-bottom-color: transparent;
+                                    border-top-color: transparent;
+                                    border-right-color: transparent;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 5px;
+                                }
+                                &:hover {
+                                     padding-left: 20px;
+                                     text-decoration: none;
+                                     color: $color-red;
+                                     &:after {
+                                        border-left-color:$color-red;
+                                     }
+                                }
                             }
                         }
                     }
@@ -470,12 +500,12 @@
     }
     input[type="text"] {
         margin: 0 5px 0 0;
-        border:1px solid #666;
+        border: 1px solid #666;
         border-radius: 3px;
-       padding: 2px 3px;
+        padding: 2px 3px;
     }
-    input{
-         width: auto;
+    input {
+        width: auto;
     }
 }
 //
@@ -804,7 +834,7 @@
                     width: 170px;
                 }
                 @media screen and (max-width:570px) {
-                     width: 225px;
+                    width: 225px;
                 }
                 @media screen and (max-width: 500px) {
                     width: 100%;
@@ -819,7 +849,7 @@
                     vertical-align: middle;
                     box-sizing: border-box;
                     padding: 5px 10px;
-                    transition:.5s;
+                    transition: .5s;
                     @media screen and (max-width: 950px) {
                         width: 150px;
                     }
@@ -842,7 +872,7 @@
                         width: 225px;
                     }
                     @media screen and (max-width: 500px) {
-                        padding:1em .5em;
+                        padding: 1em .5em;
                         width: 100%;
                         display: block;
                         height: auto;
@@ -1169,28 +1199,27 @@
 body.fix {
     overflow: hidden;
 }
-
-.apply_btn{
-    a{
+.apply_btn {
+    a {
         background: $_aColor;
-        color:#fff;
-        vertical-align:middle;
-        font-size:1em;
-        font-weight:normal;
-        &:before{
-            content:"";
-            display:inline-block;
-            width:16px;
-            height:16px;
-            background:url(../images/basic/icon_pen.png) no-repeat;
-            background-size:100%;
-            vertical-align:middle;
+        color: #fff;
+        vertical-align: middle;
+        font-size: 1em;
+        font-weight: normal;
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../images/basic/icon_pen.png) no-repeat;
+            background-size: 100%;
+            vertical-align: middle;
             margin: -1px 3px 0 0;
         }
-        &:hover, &:focus{
+        &:hover, &:focus {
             text-decoration: none;
             background: $_aHover;
-            color:#fff;
+            color: #fff;
         }
     }
 }
