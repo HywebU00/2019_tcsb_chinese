@@ -212,7 +212,8 @@
     @media (max-width:450px) {
         height: auto;
     }
-    a {
+    a {}
+    .image {
         border: 1px solid #ddd;
         display: block;
         width: 100%;
@@ -231,24 +232,24 @@
             content: '';
             display: block;
         }
-    }
-    img {
-        margin: auto;
-        max-width: 100%;
-        max-height: 100%;
-        opacity: .8;
-        transition: .3s ease-out;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: block;
-        box-sizing: border-box;
-        object-fit: cover;
-        &:hover {
-            opacity: 1;
-            transform: scale(1.05, 1.05);
+        img {
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            opacity: .8;
+            transition: .3s ease-out;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: block;
+            box-sizing: border-box;
+            object-fit: cover;
+            &:hover {
+                opacity: 1;
+                transform: scale(1.05, 1.05);
+            }
         }
     }
 }
@@ -465,20 +466,20 @@
                                     top: 5px;
                                 }
                                 &:hover {
-                                     padding-left: 20px;
-                                     text-decoration: none;
-                                     color: $color-red;
-                                     &:after {
-                                        border-left-color:$color-red;
-                                     }
+                                    padding-left: 20px;
+                                    text-decoration: none;
+                                    color: $color-red;
+                                    &:after {
+                                        border-left-color: $color-red;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-                iframe{
-                   width: 60%; 
-                   height: 400px;
+                iframe {
+                    width: 60%;
+                    height: 400px;
                 }
                 @media(max-width:992px) {
                     iframe {
