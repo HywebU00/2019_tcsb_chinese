@@ -1228,3 +1228,464 @@ body.fix {
         }
     }
 }
+// 毒性及關注化學物質整合查詢
+.query_block_in {
+    flex: auto;
+    padding: 0px 30px 20px;
+    display: flex;
+    font-size: 1.25em;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 15px;
+     border-bottom: 3px solid $_primaryColor;
+      @media(max-width: 992px){
+        padding: 0px 20px 20px;
+      }
+    label {
+        color: #fff;
+        padding-top: 8px;
+        padding-right: 15px;
+        font-size: 0;
+        line-height:0;
+    }
+    .queryinput {
+        background-color: #fff;
+        border-radius: 4px;
+        flex: none;
+        flex-basis: 80%;
+        width: 80%;
+        padding: 10px;
+        display: flex;
+        border: 1px solid $_primaryColor;
+        margin: 0 auto 10px;
+        @media(max-width: 992px) {
+            flex-basis: 100%;
+            width: 100%;
+        }
+        input[type="text"] {
+            border: none;
+            font-size: 0.938em;
+            flex: auto;
+            color: #666;
+        }
+        .btn {
+            background-image: url(../images/basic/search_icon.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 30px;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            flex: none;
+            flex-basis: 45px;
+            border-left: 1px solid #666;
+            border-radius: 0;
+            display: block;
+            &:focus {
+                outline: 2px solid #ffc000;
+            }
+        }
+    }
+    .query_explain {
+        font-size: 0.875em;
+        text-align: center;
+        color: #666;
+        flex-basis: 100%;
+    }
+}
+// 毒化物分類
+.category2 {
+    clear: both;
+    margin: 0 0px 20px;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.06em;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 992px) {
+            flex-wrap: wrap;
+        }
+        li {
+            flex: none;
+            flex-basis: 15.5%;
+            margin: 0 0.58%;
+            padding: 0;
+            @media(max-width: 992px) {
+                flex-basis: 31%;
+                margin: 0 1.16% 15px;
+            }
+            @media(max-width: 500px) {
+                flex-basis: 48%;
+                margin: 0 1% 15px;
+            }
+            &.here a {
+                cursor: default;
+                color: #fff;
+                background-color: #333;
+                position: relative;
+                &:before {
+                    content: '';
+                    border: 12px solid #333;
+                    border-right-color: transparent;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 50%;
+                    margin-left: -5px;
+                }
+            }
+            &:nth-child(2) {
+                &.here a {
+                    background-color: #008579;
+                    &:before {
+                        border: 12px solid #008579;
+                        border-right-color: transparent;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                &.here a {
+                    background-color: #986F09;
+                    &:before {
+                        border: 12px solid #986F09;
+                        border-right-color: transparent;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                &.here a {
+                    background-color: #E42549;
+                    &:before {
+                        border: 12px solid #E42549;
+                        border-right-color: transparent;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                &.here a {
+                    background-color: #458535;
+                    &:before {
+                        border: 12px solid #458535;
+                        border-right-color: transparent;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+            &:nth-child(6) {
+                &.here a {
+                    background-color: #75757F;
+                    &:before {
+                        border: 12px solid #75757F;
+                        border-right-color: transparent;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                padding: 7px 12px 3px;
+                text-decoration: none;
+                background-color: #eee;
+                color: #000;
+                position: relative;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                height: 100%;
+                min-height: 70px;
+                line-height: 1.6em;
+                border-bottom: 5px solid #333;
+                transition: .5s;
+                em {
+                    font-style: normal;
+                }
+                span {
+                    display: block;
+                }
+                &:hover {
+                    background-color: #333;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            &:nth-child(2) {
+                a {
+                    border-bottom-color: #008579;
+                    &:hover {
+                        background-color: #008579;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                a {
+                    border-bottom-color: #986F09;
+                    &:hover {
+                        background-color: #986F09;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                a {
+                    border-bottom-color: #E42549;
+                    &:hover {
+                        background-color: #E42549;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                a {
+                    border-bottom-color: #458535;
+                    &:hover {
+                        background-color: #458535;
+                    }
+                }
+            }
+            &:nth-child(6) {
+                a {
+                    border-bottom-color: #75757F;
+                    &:hover {
+                        background-color: #75757F;
+                    }
+                }
+            }
+        }
+    }
+}
+// 毒化物分類內容
+.poison_content {
+    margin: 0 0.58%;
+    @media(max-width: 992px) {
+        margin: 0 1.16%;
+    }
+    @media(max-width: 500px) {
+        margin: 0 1%;
+    }
+    .poison_explain {
+        margin-bottom: 15px;
+        font-size: 1.125em;
+    }
+    .poison_list_block {
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        .poison_list {
+            flex: none;
+            width: 23.5%;
+            flex-basis: 23.5%;
+            margin: 0 0.75% 15px;
+            @media(max-width: 992px) {
+                width: 31%;
+                flex-basis: 31%;
+                margin: 0 1.16% 15px;
+            }
+            @media(max-width: 767px) {
+                width: 48%;
+                flex-basis: 48%;
+                margin: 0 1% 15px;
+            }
+            @media(max-width: 500px) {
+                width: 100%;
+                flex-basis: 100%;
+                margin: 0 0 15px;
+            }
+            a {
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                display: block;
+                padding: 10px;
+                height: 170px;
+                border-radius: 5px;
+                transition: .5s;
+                &:hover, &:focus {
+                    text-decoration: none;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                }
+                .top_block {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 5px;
+                    .serial_number {
+                        color: #666;
+                        font-size: 0.938em;
+                        em {
+                            font-size: 1.188em;
+                            color: #333;
+                            font-style: normal;
+                            margin-left: 10px;
+                        }
+                    }
+                    .sort_number {
+                        display: flex;
+                        flex: auto;
+                        justify-content: flex-end;
+                        span {
+                            background-color: #999;
+                            color: #fff;
+                            border-radius: 50%;
+                            width: 18px;
+                            height: 18px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0 1px;
+                            font-size: 0.813em;
+                            &.poison01 {
+                                background-color: #008579;
+                            }
+                            &.poison02 {
+                                background-color: #986F09;
+                            }
+                            &.poison03 {
+                                background-color: #E42549;
+                            }
+                            &.poison04 {
+                                background-color: #458535;
+                            }
+                            &.attention {
+                                background-color: #666;
+                                width: 50px;
+                                height: 20px;
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+                .content_block {
+                    border-top: 1px solid #ccc;
+                    text-align: center;
+                    padding-top: 13px;
+                    .cas {
+                        color: #2E72BA;
+                        font-size: 0.875em;
+                        margin-bottom: 5px;
+                        font-weight: bolder;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        em {
+                            color: $color-red;
+                            font-style: normal;
+                        }
+                    }
+                    .name_ch {
+                        color: #333;
+                        font-size: 1.25em;
+                        margin-bottom: 5px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        em {
+                            color: $color-red;
+                            font-style: normal;
+                        }
+                    }
+                    .name_en {
+                        color: #777;
+                        font-size: 0.813em;
+                        margin-bottom: 5px;
+                        line-height: 1.5em;
+                        height: 40px;
+                        overflow: hidden;
+                        @include text-line(2);
+                        em {
+                            color: $color-red;
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 毒化物 無資料
+.poison_content_nodata {
+    .nodata {
+        padding: 25px 0 50px;
+        font-size: 1.125em;
+        text-align: center;
+    }
+    .poison_explain {
+        margin-bottom: 25px;
+        font-size: 1.125em;
+        padding: 15px;
+        background-color: #eee;
+        border-radius: 4px;
+        em {
+            color: $color-red;
+            font-style: normal;
+        }
+    }
+    .poison_recommend {
+        padding: 20px 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        .title {
+            font-size: 1.562em;
+            color: #268725;
+            line-height: 1.75em;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            margin: 0 0 10px;
+        }
+        .recommend_list_block {
+            padding: 20px 0;
+            font-size: 1.125em;
+        }
+        .recommend_list {
+            margin: 0 0 20px;
+            display: inline-block;
+            position: relative;
+            padding-left: 15px;
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: #333;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 8px;
+            }
+            span {
+                padding: 5px;
+                color: #333;
+                margin: 0 0 25px;
+                border-radius: 50px;
+            }
+            a {
+                position: relative;
+                padding: 0 30px 0 0;
+                color: $_primaryColor;
+                text-decoration: underline;
+                display: inline-block;
+                &:hover {
+                    color: $color-red;
+                }
+                &:after {
+                    content: '、';
+                    position: absolute;
+                    right: 5px;
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

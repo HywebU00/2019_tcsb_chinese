@@ -369,7 +369,15 @@
         clear: both;
         line-height: 140%;
         border-bottom: 1px solid $_primaryColor;
-        font-weight: 700
+        font-weight: 700;
+        &.poison_h1{
+            text-align:center;
+            border:none;
+            span{
+                display: block;
+                font-size: 0.75em;
+            }
+        }
     }
     .accesskey {
         position: absolute;

@@ -1674,3 +1674,217 @@
 .map-med2 {
     width: 20px;
 }
+// 法規列管資訊
+.manage_title {
+    color: $_secondaryColor;
+    font-size: 1.562em;
+    padding: 0 0 0 20px;
+    position: relative;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    &:before {
+        content: '';
+        width: 6px;
+        height: 25px;
+        background-color: $_secondaryColor;
+        position: absolute;
+        left: 0;
+        top: 2px;
+    }
+}
+.poison_Tb {
+    margin-bottom: 20px;
+    table {
+        border: none !important;
+        border-top: 3px solid #333 !important;
+        border-bottom: 3px solid #333 !important;
+        td, th {
+            border: none !important;
+            border-bottom: 1px solid #bbb !important;
+            background-color: #fff !important;
+            @media(max-width: 767px) {
+                display: block;
+            }
+        }
+        th {
+            padding: 15px 50px 15px 10px !important;
+            text-align: right;
+            font-size: 1.063em;
+            font-weight: normal;
+            position: relative;
+            width: 33%;
+            @media(max-width: 767px) {
+                width: 100%;
+                text-align: left;
+                background-color: #E6E6E6 !important;
+            }
+            span {
+                display: block;
+                font-size: 0.813em;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: auto;
+                background-color: #bbb;
+                right: 0;
+                top: 10px;
+                bottom: 10px;
+                @media(max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+        td {
+            padding: 15px 10px 15px 50px !important;
+            position: relative;
+            overflow: hidden;
+            @media(max-width: 767px) {
+                padding: 15px 10px !important;
+            }
+        }
+        .manage_explain {
+            width: 70%;
+            float: right;
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
+            }
+            .manage_explain_title {
+                text-align: right;
+                padding: 0 25px 0 0;
+                color: $_primaryColor;
+                position: relative;
+                &:after {
+                    content: '';
+                    border: 7px solid $_primaryColor;
+                    border-right-color: transparent;
+                    border-left-color: transparent;
+                    border-bottom-color: transparent;
+                    position: absolute;
+                    top: 10px;
+                    right: 0;
+                }
+            }
+            .manage_explain_content {
+                display: none;
+                padding: 15px;
+                color: #333;
+                background-color: #eee;
+                font-size: 0.938em;
+            }
+        }
+    }
+}
+.poison_download, .poison_link {
+    margin-bottom: 40px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        li {
+            flex: none;
+            flex-basis: 32% !important;
+            margin: 0 0.66% 15px !important;
+            @media(max-width: 992px) {
+                flex-basis: 48% !important;
+                margin: 0 1% 15px !important;
+            }
+            @media(max-width: 575px) {
+                flex-basis: 100% !important;
+                margin: 0 0 15px !important;
+            }
+            a {
+                display: block;
+                background-color: $_primaryColor;
+                color: #fff;
+                padding: 10px 10px 10px 15px;
+                position: relative;
+                text-decoration: none;
+                transition: .5s;
+                &:after {
+                    content: '';
+                    width: 50px;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: darken($_primaryColor, 10);
+                }
+                span {
+                    position: absolute;
+                    z-index: 9;
+                    right: 10px;
+                    top: 8px;
+                    img {
+                        width: 28px;
+                    }
+                }
+                &:hover {
+                    color: #fff;
+                    text-decoration: none;
+                    background-color: darken($_primaryColor, 10);
+                }
+            }
+            p {
+                line-height: 1.5em;
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+}
+.cp article {
+    position: relative;
+    .sort_number {
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        span {
+            background-color: #999;
+            color: #fff;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 2px;
+            font-size: 1em;
+            &.poison01 {
+                background-color: #008579;
+            }
+            &.poison02 {
+                background-color: #986F09;
+            }
+            &.poison03 {
+                background-color: #E42549;
+            }
+            &.poison04 {
+                background-color: #458535;
+            }
+            &.attention {
+                background-color: #666;
+                width: 70px;
+                height: 30px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+.chemical_formula{
+    font-size: 1.313em;
+    span{
+        vertical-align:text-bottom;
+        font-size: 0.563em;
+        padding:0 1px;
+    }
+}

@@ -506,7 +506,7 @@
 .tabItem.active a,
 .tabItem.active a:hover,
 .tabItem.active a:focus {
-    background-color:$_lightColor;
+    background-color: $_lightColor;
     color: #000;
 }
 .tabItem:first-child a {
@@ -567,7 +567,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             width: auto;
-            color:#333;
+            color: #333;
             &:hover,
             &:focus {
                 color: $color-red;
@@ -590,7 +590,6 @@
             border-left: 5px solid lighten($_primaryColor, 20);
             border-bottom: 5px solid transparent;
             transition: .3s ease-out;
-
         }
         &:hover {
             &::before {
@@ -717,7 +716,7 @@
     border-top: 1px solid #fff;
     text-decoration: none;
     font-size: 1.313em;
-    background:$color-blue;
+    background: $color-blue;
     color: #fff;
     transition: .5s;
 }
@@ -1067,7 +1066,7 @@
         z-index: 99;
         float: right;
         &:hover, &:focus {
-            color:#FFF !important;
+            color: #FFF !important;
             background-color: $_primaryColor;
         }
         @media(max-width: 767px) {
@@ -1223,7 +1222,7 @@
                     background-image: url(../images/service_icon04.png);
                     background-repeat: no-repeat;
                     background-position: 10px 10px;
-                    background-color:$color-orange;
+                    background-color: $color-orange;
                     position: relative;
                     padding: 18px 10px 17px 50px;
                     &:hover,
@@ -1239,7 +1238,8 @@
                         content: '';
                         width: 100px;
                         height: 100%;
-                        background-color: darken($color-red, 10);;
+                        background-color: darken($color-red, 10);
+                        ;
                         position: absolute;
                         right: -20px;
                         top: 0;
@@ -1645,7 +1645,7 @@
     .education_block .container .row div:nth-of-type(4) .education,
     .education_block .container .row div:nth-of-type(6) .education,
     .education_block .container .row div:nth-of-type(8) .education {
-        background-color:darken( $_lightColor, 15);
+        background-color: darken($_lightColor, 15);
     }
 }
 @media (max-width: 767px)and (min-width: 481px) {
@@ -1653,7 +1653,7 @@
     .education_block .container .row div:nth-of-type(3) .education,
     .education_block .container .row div:nth-of-type(7) .education,
     .education_block .container .row div:nth-of-type(8) .education {
-        background-color:darken( $_lightColor, 15);
+        background-color: darken($_lightColor, 15);
     }
 }
 @media (max-width: 480px) {
@@ -1661,7 +1661,7 @@
     .education_block .container .row div:nth-of-type(4) .education,
     .education_block .container .row div:nth-of-type(7) .education,
     .education_block .container .row div:nth-of-type(9) .education {
-        background-color:darken( $_lightColor, 15);
+        background-color: darken($_lightColor, 15);
     }
 }
 /* ----------------社區知情權  */
@@ -1706,7 +1706,7 @@
         }
         h3 {
             font-size: 1.375em;
-            color:$_primaryColor ;
+            color: $_primaryColor;
             margin: 0;
             padding: 0;
             font-weight: 400;
@@ -2398,4 +2398,98 @@
 .fastlink ul li a:hover {
     background-color: #194d5a;
     text-decoration: none
+}
+// 整合查詢
+.integrated_query {
+    display: flex;
+    align-items: center;
+    @media(max-width: 600px) {
+        flex-wrap: wrap;
+    }
+    .query_block {
+        flex: auto;
+        padding: 20px 30px;
+        display: flex;
+        font-size: 1.25em;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: $_primaryColor;
+        color: #fff;
+        flex-wrap: wrap;
+        label {
+            color: #fff;
+            padding-top: 8px;
+            padding-right: 15px;
+        }
+        .queryinput {
+            background-color: #fff;
+            border-radius: 4px;
+            flex: auto;
+            padding: 10px;
+            display: flex;
+            input[type="text"] {
+                border: none;
+                font-size: 0.938em;
+                flex: auto;
+                color: #666;
+            }
+            .btn {
+                background-image: url(../images/basic/search_icon.svg);
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-size: 30px;
+                width: 30px;
+                height: 30px;
+                background-color: transparent;
+                flex: none;
+                flex-basis: 45px;
+                border-left: 1px solid #666;
+                border-radius: 0;
+                display: block;
+                &:focus {
+                    outline: 2px solid #ffc000;
+                }
+            }
+        }
+    }
+    .query_more_block {
+        background-color: $_lightColor;
+        flex: none;
+        flex-basis: 200px;
+        padding: 0;
+        align-self: stretch;
+        font-size: 1.25em;
+        @media(max-width: 600px) {
+            flex: auto;
+            flex-basis: 100%;
+        }
+        a {
+            padding: 20px 30px;
+            display: block;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            &:after {
+                content: '';
+                border: 3px solid #333;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                right: 50px;
+                transform: rotate(45deg);
+                transition: .5s;
+                @media(max-width: 600px) {
+                    right: 35px;
+                }
+            }
+            &:hover {
+                &:after {
+                    right: 55px;
+                }
+            }
+        }
+    }
 }
