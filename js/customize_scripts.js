@@ -303,5 +303,6 @@ $(document).on('change', '.check_file', function() {
 $(function(){
     $('.manage_explain_title>a').click(function(){
         $(this).parent('.manage_explain_title').siblings('.manage_explain_content').slideToggle();
+        $(this).stop().toggleClass('addopen');
     })
 })
