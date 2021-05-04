@@ -1694,16 +1694,22 @@
 }
 .poison_Tb {
     margin-bottom: 20px;
+    border-top: 3px solid #333 !important;
+        border-bottom: 3px solid #333 !important;
     table {
         border: none !important;
-        border-top: 3px solid #333 !important;
-        border-bottom: 3px solid #333 !important;
+        margin:0 !important;
         td, th {
             border: none !important;
-            border-bottom: 1px solid #bbb !important;
-            background-color: #fff !important;
+           
+           
             @media(max-width: 767px) {
                 display: block;
+            }
+        }
+        tr:last-child{
+            td,th{
+                border-bottom: none !important;
             }
         }
         th {
@@ -1714,6 +1720,9 @@
             position: relative;
             width: 33%;
             font-weight: bold;
+            background-color: transparent!important;
+             border-bottom: 1px solid #bbb !important;
+            
             @media(max-width: 767px) {
                 width: 100%;
                 text-align: left;
@@ -1741,6 +1750,7 @@
             padding: 15px 10px 15px 50px !important;
             position: relative;
             overflow: hidden;
+             border-bottom: 1px solid #bbb !important;
             @media(max-width: 767px) {
                 padding: 15px 10px !important;
             }
