@@ -1340,7 +1340,7 @@ body.fix {
                     margin-left: -5px;
                 }
             }
-            &:nth-child(2) {
+            &.darkgreen_bg {
                 &.here a {
                     background-color: #008579;
                     &:before {
@@ -1351,7 +1351,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(3) {
+            &.darkyellow_bg {
                 &.here a {
                     background-color: #986F09;
                     &:before {
@@ -1362,7 +1362,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(4) {
+            &.red_bg {
                 &.here a {
                     background-color: #E42549;
                     &:before {
@@ -1373,7 +1373,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(5) {
+            &.green_bg {
                 &.here a {
                     background-color: #458535;
                     &:before {
@@ -1384,7 +1384,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(6) {
+            &.darkgray_bg {
                 &.here a {
                     background-color: #75757F;
                     &:before {
