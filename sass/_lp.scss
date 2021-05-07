@@ -1422,7 +1422,7 @@ body.fix {
                     text-decoration: none;
                 }
             }
-            &:nth-child(2) {
+            &.darkgreen_bg {
                 a {
                     border-bottom-color: #008579;
                     &:hover {
@@ -1430,7 +1430,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(3) {
+            &.darkyellow_bg {
                 a {
                     border-bottom-color: #986F09;
                     &:hover {
@@ -1438,7 +1438,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(4) {
+            &.red_bg {
                 a {
                     border-bottom-color: #E42549;
                     &:hover {
@@ -1446,7 +1446,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(5) {
+            &.green_bg {
                 a {
                     border-bottom-color: #458535;
                     &:hover {
@@ -1454,7 +1454,7 @@ body.fix {
                     }
                 }
             }
-            &:nth-child(6) {
+            &.darkgray_bg {
                 a {
                     border-bottom-color: #75757F;
                     &:hover {
