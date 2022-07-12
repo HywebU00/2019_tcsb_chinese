@@ -1135,6 +1135,35 @@
 }
 //
 .service {
+    h2 {
+        font-size: 1.5em;
+        padding:0;
+        color: $_primaryColor;
+        margin: 0 0 10px 0;
+        border-bottom: none;
+        display: block;
+        position: relative;
+        z-index: 9;
+        // background-color: #ddd;
+        letter-spacing: 0.1em;
+        position:relative;
+        span{
+            font-size: 1.8em;
+            padding-right:5px;
+        }
+        &:before{
+            content: '';
+            width:100%;
+            height: 25px;
+           background-color: #ddd;
+           position: absolute;
+           bottom:0;
+           left:0;
+           right: 0;
+           z-index: -1;
+        }
+
+    }
     .servicebanner {
         margin-bottom: 10px;
         img {
