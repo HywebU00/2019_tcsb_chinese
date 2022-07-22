@@ -1136,33 +1136,84 @@
 //
 .service {
     h2 {
-        font-size: 1.5em;
-        padding:0;
+        font-size: 1.562em;
+        padding: 0;
         color: $_primaryColor;
-        margin: 0 0 10px 0;
+        margin: 0 0 23px 0;
         border-bottom: none;
         display: block;
         position: relative;
         z-index: 9;
         // background-color: #ddd;
         letter-spacing: 0.1em;
-        position:relative;
-        span{
-            font-size: 1.8em;
-            padding-right:5px;
+        position: relative;
+        span {
+            font-size: 1.75em;
+            padding-right: 5px;
+            &.redword {
+                color: $color-red;
+                animation-name: new;
+                animation-duration: 1.5s;
+                
+                @keyframes new {
+                    from {
+                        margin-right: 200px;
+                       
+                    }
+                    to {
+                        margin-right: 0px;
+                        
+                    }
+                }
+            }
         }
-        &:before{
+        &:before {
             content: '';
-            width:100%;
-            height: 25px;
-           background-color: #ddd;
-           position: absolute;
-           bottom:0;
-           left:0;
-           right: 0;
-           z-index: -1;
+            width: 100%;
+            height: 26px;
+            background-color: #ddd;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
         }
-
+    }
+    .follow_news {
+        margin-bottom: 10px;
+        ul {
+            margin: 1em 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                border-bottom: 1px dotted #CCC;
+                a {
+                    display: block;
+                    padding: 10px 30px 10px 25px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: auto;
+                    color: #333;
+                    font-size: 1em;
+                    &:before {
+                        content: '';
+                        width: 0px;
+                        height: 0px;
+                        position: absolute;
+                        top: 14px;
+                        left: 5px;
+                        border-top: 5px solid transparent;
+                        border-left: 5px solid lighten($_primaryColor, 20);
+                        border-bottom: 5px solid transparent;
+                        transition: .3s ease-out;
+                    }
+                    &:hover {
+                        color: #e30000;
+                    }
+                }
+            }
+        }
     }
     .servicebanner {
         margin-bottom: 10px;
