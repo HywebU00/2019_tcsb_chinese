@@ -1154,15 +1154,17 @@
                 color: $color-red;
                 animation-name: new;
                 animation-duration: 1.5s;
-                
+                padding-right: 15px;
+                position: relative;
+                img {
+                    margin-top: -9px;
+                }
                 @keyframes new {
                     from {
                         margin-right: 200px;
-                       
                     }
                     to {
                         margin-right: 0px;
-                        
                     }
                 }
             }
