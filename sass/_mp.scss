@@ -166,7 +166,7 @@
                 width: 30%;
                 margin-right: 5px;
                 margin-bottom: 10px;
-                height: 40px;
+                // height: 40px;
                 border-radius: 5px;
                 text-align: left;
                 @media(max-width: 530px) {
@@ -205,7 +205,7 @@
                 background-color: $_primaryColor;
                 padding: 3px 5px;
                 width: 68%;
-                height: 40px;
+                // height: 40px;
                 border-radius: 5px;
                 margin-bottom: 10px;
                 text-align: left;
@@ -242,6 +242,7 @@
                 input[type="image"] {
                     padding: 3px 3px 3px;
                     margin-top: 3px;
+                    width: auto;
                 }
                 input {
                     vertical-align: middle;
@@ -1056,7 +1057,7 @@
     }
     .btn-more {
         display: block;
-        width: 130px;
+        width: 150px;
         border-color: #DDD;
         background-color: #DDD;
         color: #333;
@@ -1322,7 +1323,7 @@
                     background-position: 10px 10px;
                     background-color: $color-orange;
                     position: relative;
-                    padding: 18px 10px 17px 50px;
+                    padding: 18px 80px 17px 50px;
                     &:hover,
                     &:focus {
                         background-color: darken($color-red, 10);
@@ -1554,29 +1555,33 @@
     background-image: url('../images/education_bg.jpg');
     background-repeat: repeat-y;
     background-position: center top;
+    background-size:100% 100%;
     .container {
         position: relative;
         h2 {
             position: absolute;
-            right: 38%;
-            top: 220px;
-            font-size: 2em;
+            left:50%;
+            top: 8em;
+            width:5em;
+            margin-left: -2.5em;
+            font-size: 1.875em;
+            line-height: 1.2em;
             color: #333;
             z-index: 99;
             font-weight: 400;
-            @media (max-width: 1199px) {
-                right: 35%;
-            }
+            text-align: center;
+           
             @media (max-width: 991px) {
                 font-size: 1.687em;
             }
             @media (max-width: 767px) {
                 position: relative;
                 top: 0;
-                right: auto;
+                left: auto;
                 text-align: center;
                 font-size: 2em;
                 margin: 0;
+                width: auto;
                 padding: 15px 0 25px;
                 background-color: #fff;
                 ;
@@ -1660,12 +1665,22 @@
         }
     }
     .education {
-        height: 170px;
+        height: 9em;
         position: relative;
         overflow: hidden;
         text-align: center;
         background-color: rgba($_linkColor, .8);
         font-size: 1.25em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        >a {
+            display: block;
+            flex: 0 0 auto;
+            padding: 0;
+            // outline: 1px solid red;
+        }
         &:hover,
         &:focus {
             .educationlist {
@@ -1675,9 +1690,16 @@
         &.nodatablock {
             background-color: rgba(255, 255, 255, .8);
         }
+        .title {
+            font-weight: 700;
+            color: #333;
+            // outline: 1px solid red;
+            flex: 0 0 auto;
+            flex-basis: 80%;
+        }
         .educationlist {
             position: absolute;
-            top: 170px;
+            top: 9em;
             bottom: 0px;
             left: 0;
             width: 100%;
@@ -1685,7 +1707,7 @@
             transition: .5s ease-out;
             padding: 0;
             ul {
-                margin: 8px 20px 5px;
+                margin: 8px 20px 10px;
                 padding: 0;
                 li {
                     height: auto;
@@ -1715,7 +1737,7 @@
             .more {
                 font-size: 0.813em;
                 margin: 0 20px;
-                width: 60px;
+                min-width: 60px;
                 float: right;
                 a {
                     color: #fff;
@@ -1730,11 +1752,7 @@
             }
         }
         img {
-            margin: 30px 0 10px
-        }
-        .title {
-            font-weight: 700;
-            color: #333;
+            margin: 20px 0 0px
         }
     }
 }
@@ -1794,12 +1812,19 @@
     }
     .contentblock {
         text-align: left;
-        height: 350px;
+        // height: 350px;
+        height: 22em;
         width: 85%;
-        margin: 0 auto;
+        margin: 0 auto 1em;
+        @media (max-width: 1200px) {
+            height: auto;
+        }
+        @media (max-width:991px) {
+            height: 22em;
+        }
         @media (max-width: 767px) {
             height: auto;
-            margin: 0 0 30px;
+            margin: 0 0 1em;
             width: auto;
         }
         h3 {
@@ -1970,7 +1995,7 @@
     .btn-more {
         clear: both;
         background-color: #c3c3c3;
-        color: #666;
+        color: #333;
         @media(max-width: 767px) {
             width: 100%
         }
@@ -2070,8 +2095,9 @@
     }
     h2 {
         margin: 0;
-        width: 125px;
-        height: 135px;
+        // width: 7.8125em;
+        // height: 135px;
+        width: 4.8125em;
         font-size: 1.5em;
         color: #fff;
         font-weight: 500;
@@ -2160,6 +2186,7 @@
             }
             span {
                 display: block;
+                line-height: 1.25em;
             }
         }
         .deadlinetime {}
@@ -2174,7 +2201,7 @@
             width: 85%;
             border: 1px solid #fff;
             padding: 10px 0;
-            height: 135px;
+            min-height: 7em;
         }
     }
 }
@@ -2212,8 +2239,9 @@
     }
     h2 {
         margin: 0;
-        width: 125px;
-        height: 135px;
+        // width: 125px;
+        // height: 135px;
+        width: 4.8125em;
         font-size: 1.5em;
         color: $_aColor;
         font-weight: 500;
@@ -2293,14 +2321,15 @@
             text-align: center;
             font-size: 1.125em;
             .data {
-                width: 165px;
-                height: 165px;
-                padding: 20px 20px 5px;
+                width: 170px;
+                height: 170px;
+                padding: 20px 15px 5px;
                 margin: 0 0 10px 30px;
                 background-color: $_secondaryColor;
                 border-radius: 50%;
                 text-align: center;
-                line-height: 1.2em;
+                line-height: 1.1em;
+                box-sizing: border-box;
                 @media(max-width: 700px) {
                     margin: 0 0 10px 20%;
                 }
@@ -2576,7 +2605,7 @@
                 position: absolute;
                 width: 20px;
                 height: 20px;
-                right: 50px;
+                right: 30px;
                 transform: rotate(45deg);
                 transition: .5s;
                 @media(max-width: 600px) {

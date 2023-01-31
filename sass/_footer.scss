@@ -13,6 +13,7 @@
         background-color: $_primaryColor;
         padding: 2px 5px;
         border-radius: 3px;
+        display: inline-block;
         &:hover, &:focus {
             background-color: $_aColor;
         }
@@ -38,10 +39,15 @@
     }
     .web20 {
         margin-bottom: 20px;
+
+        display: flex;
         a {
             display: inline-block;
             width: 50px;
             height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
             @include border-radius(50%);
             text-align: center;
             font-size: 2em;

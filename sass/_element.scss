@@ -412,12 +412,12 @@
             a.rss {
                 background-image: url(../images/icon_rss.png);
                 background-repeat: no-repeat;
-                background-position: 0 5px;
+                background-position: 0 center;
             }
             a.condition {
                 background-image: url(../images/icon_condition.png);
                 background-repeat: no-repeat;
-                background-position: 0 5px;
+                background-position: 0 center;
             }
         }
     }
@@ -428,9 +428,13 @@
     overflow: hidden;
     padding: 15px 10px 15px 20px;
     clear: both;
+    display: flex;
+    flex-wrap: wrap;
     .share2 {
-        float: left;
-        width: 260px;
+       flex:1 1 auto;
+       display: flex;
+       align-items:center;
+        // width: 260px;
         @media (max-width: 991px) {
             clear: both;
             margin: 0 0 20px 0;
@@ -446,6 +450,7 @@
             margin: 0;
             padding: 0;
             list-style: none;
+             display: flex;
             li {
                 margin: 0 5px 0 0;
                 float: left;
@@ -484,7 +489,7 @@
         }
     }
     .data {
-        float: right;
+        flex:1 1 auto;
         margin: 8px 0 0;
         @media (max-width: 991px) {
             clear: both;
@@ -493,9 +498,13 @@
         ul {
             margin: 0;
             padding: 0;
+            text-align: right;
+            @media(max-width: 1200px){
+                 text-align: left;
+            }
             li {
                 margin: 0 15px 0 0;
-                display: inline;
+                display: inline-block;
                 border-right: 1px solid #999;
                 padding: 0 15px 0 0;
                 @media (max-width: 550px) {
@@ -504,7 +513,7 @@
                     margin: 0 0 7px 0;
                     background-image: url(../images/link_icon01.png);
                     background-repeat: no-repeat;
-                    background-position: 0 7px;
+                    background-position:0 12px;
                     padding: 0 0 0 15px;
                 }
                 a {

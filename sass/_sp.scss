@@ -387,29 +387,30 @@ $_activeColor:$_primaryColor;
             }
             li {
                 margin: 30px 0;
+                display: flex;
+                flex-wrap: wrap;
                 .heading {
-                    float: left;
-                    width: 105px;
+                    flex:1 1 auto;
+                    flex-basis: 7em;
                     font-size: 1em;
                     font-weight: bold;
                     margin-bottom: 15px;
+                    
                     &:after {
                         content: "/";
                         display: inline-block;
                         padding: 0 7px;
                     }
                     @media (max-width: 600px) {
-                        float: none;
-                        width: auto;
+                        flex-basis: 100%;
                     }
                 }
                 .right_content {
-                    width: calc(100% - 105px);
-                    float: left;
+                   flex:1 1 auto;
+                   flex-basis: calc(100% - 7em);
                     margin-bottom: 1.5em;
                     @media (max-width: 600px) {
-                        float: none;
-                        width: 100%;
+                        flex-basis: 100%;
                     }
                     a {
                         display: block;
@@ -648,7 +649,7 @@ $_activeColor:$_primaryColor;
             background:$_secondaryColor;
             color: #fff;
             font-size: 1em;
-            width: 200px;
+            width: 11em;
             border-radius: 4px;
             border: none;
             margin: 5px 5px;
