@@ -521,12 +521,13 @@ $_activeColor:$_primaryColor;
                         border-color: transparent transparent transparent $_primaryColor;
                         @media (max-width: 991px) {
                             border: none;
-                            background: url(../images/apply_step_triangle.png) no-repeat top;
+                            background: url(../images/apply_step_triangle2.png) no-repeat top;
                             background-size: calc(100% + 4px) 75%;
                             width: calc(100% + 4px);
                             height: 40px;
                             top: 100%;
                             left: -2px;
+                            border-color: $_primaryColor transparent transparent  transparent;
                         }
                     }
                 }
@@ -546,7 +547,31 @@ $_activeColor:$_primaryColor;
                     padding: 0 7px;
                 }
             }
+            .apply_btn{
+                margin-bottom: 2em;
+            }
         }
+        .line_banner_block{
+            text-align: center;
+            border:1px solid #ddd;
+            padding:2em;
+            clear:both;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            border-radius: 5px;
+            .directions{
+                    font-size: 1.25em;
+                    margin-bottom: 1em;
+            }
+            .line_banner_pic{
+                @media  (max-width: 500px){
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+
+        }
+
     }
     .form-group {
         padding: 6px 0;
