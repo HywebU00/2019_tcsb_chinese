@@ -109,9 +109,9 @@ $(document).ready(function(e) {
     });
 });
 $(function() { $(".scrollToTop").click(function() { $("html,body").animate({ scrollTop: 0 }, 1000, "easeOutQuint"); return false; }); });
-$(function(){
+$(function() {
     $('.scrollToTop').keydown(function(e) {
-       $('body').find('a.goCenter').focus();
+        $('body').find('a.goCenter').focus();
         e.preventDefault();
     });
 })
@@ -238,15 +238,42 @@ $(function() {
     });
 })
 $(function() {
-    $('.group01').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.news').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group02').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.importantdata_block').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group03').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.recommend_block').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group04').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.communityblock').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group05').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.education_block').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group06').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.industry').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group07').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.propagandamovie').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group08').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.activityphoto').offset().top }, 1200, 'easeOutExpo'); });
-    $('.group09').click(function() { $('body,html').stop(true, true).animate({ scrollTop: $('.common_links').offset().top }, 1200, 'easeOutExpo'); });
+    $('.group01').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.news').offset().top }, 1200, 'easeOutExpo');
+        $('.news').find('.firstlink').focus();
+    });
+    $('.group02').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.importantdata_block').offset().top }, 1200, 'easeOutExpo');
+        $('.importantdata_block').find('.slick-prev').focus();
+    });
+    $('.group03').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.recommend_block').offset().top }, 1200, 'easeOutExpo');
+        $('.recommend_block').find('.slick-prev').focus();
+    });
+    $('.group04').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.communityblock').offset().top }, 1200, 'easeOutExpo');
+        $('.communityblock').find('.firstlink').focus();
+    });
+    $('.group05').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.education_block').offset().top }, 1200, 'easeOutExpo');
+        $('.education_block').find('.firstlink').focus();
+    });
+    $('.group06').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.industry').offset().top }, 1200, 'easeOutExpo');
+        $('.industry').find('.firstlink').focus();
+    });
+    $('.group07').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.propagandamovie').offset().top }, 1200, 'easeOutExpo');
+        $('.propagandamovie').find('.firstlink').focus();
+    });
+    $('.group08').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.activityphoto').offset().top }, 1200, 'easeOutExpo');
+        $('.activityphoto').find('.slick-prev').focus();
+    });
+    $('.group09').click(function() {
+        $('body,html').stop(true, true).animate({ scrollTop: $('.common_links').offset().top }, 1200, 'easeOutExpo');
+        $('.common_links').find('.firstlink').focus();
+    });
 })
 //宣導影音
 $(function() {
@@ -263,11 +290,18 @@ $(function() {
         var box = $($(this).data("rel"));
         box.fadeIn();
         $('body').addClass('fix');
+        $('.material_lightbox .boxclose a').focus();
+
         box.find(".boxclose, .overlay").one("click", function() {
             box.fadeOut();
             $('body').removeClass('fix');
         });
+
     });
+     $('.material_lightbox .boxcontent').append('<button class="skip" type="button">回到控制開關</button>');
+     $('.material_lightbox .skip').focus(function(){
+        $('.material_lightbox .boxclose a').focus();
+     })
 })
 $(function() {
     if ($(".part").height() < 160) {
@@ -300,8 +334,8 @@ $(document).on('change', '.check_file', function() {
         $(this).closest('.upload_grp').find('.upload_file').attr("value", names);
     }
 });
-$(function(){
-    $('.manage_explain_title>a').click(function(){
+$(function() {
+    $('.manage_explain_title>a').click(function() {
         $(this).parent('.manage_explain_title').siblings('.manage_explain_content').slideToggle();
         $(this).stop().toggleClass('addopen');
     })

@@ -929,8 +929,12 @@
                 border-radius: 50%;
                 width: 40px;
                 height: 40px;
+                 &:hover{
+                    background-color: darken( $_primaryColor, 10);
+                 }
                 &:focus {
-                    outline: 1px solid #fbdb65;
+                    outline: 3px solid #fbdb65;
+
                 }
             }
         }
@@ -1015,6 +1019,20 @@
 .material_lightbox .boxdata ol {
     margin: 0 0 15px 20px;
     padding: 0;
+}
+.material_lightbox .boxcontent .skip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    width: 1px;
+    height: 1px;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    text-indent: -20em;
+    overflow: hidden;
 }
 @media(max-width:500px) {
     .material_lightbox .boxdata {}
