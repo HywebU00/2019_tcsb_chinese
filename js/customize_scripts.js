@@ -290,7 +290,7 @@ $(function() {
         var box = $($(this).data("rel"));
         box.fadeIn();
         $('body').addClass('fix');
-        $('.material_lightbox .boxclose a').focus();
+        box.find('.boxclose a').focus();
 
         box.find(".boxclose, .overlay").one("click", function() {
             box.fadeOut();
