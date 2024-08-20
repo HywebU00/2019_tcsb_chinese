@@ -1582,7 +1582,7 @@ blockquote {
   border-radius: 50%;
   background: url(../images/basic/top.png) no-repeat center top rgba(0, 0, 0, 0.4);
   text-align: center;
-  color: #FFF;
+  color: #fff;
   line-height: 50px;
   text-decoration: none;
   position: fixed;
@@ -1605,7 +1605,7 @@ blockquote {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
-  color: #FFF;
+  color: #fff;
   line-height: 50px;
   text-decoration: none;
   position: fixed;
@@ -1648,7 +1648,7 @@ blockquote {
   background: #666;
   height: 32px;
   line-height: 32px;
-  color: #FFF !important;
+  color: #fff !important;
   font-size: 0.75em !important;
 }
 
@@ -1797,7 +1797,7 @@ blockquote {
 .page .number li a:hover {
   color: #214b56;
   text-decoration: none;
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
 }
 .page .number li:first-child a {
   margin-left: 0px;
@@ -1895,7 +1895,7 @@ blockquote {
     border-bottom: 1px solid #000;
     display: block;
     margin-bottom: 5px;
-    background: #F2F2F2;
+    background: #f2f2f2;
   }
   .RWD_table table td {
     border-bottom: 1px solid #000;
@@ -1919,7 +1919,10 @@ blockquote {
   }
 }
 /* 內頁 */
-.np, .lp, .cp, .sitemap {
+.np,
+.lp,
+.cp,
+.sitemap {
   position: relative;
 }
 
@@ -2054,7 +2057,7 @@ blockquote {
   background-color: #df2f2f;
 }
 .bottomfunction .share2 ul li a.twitter {
-  background-color: #55acec;
+  background-color: #000;
 }
 .bottomfunction .share2 ul li a.line {
   background-color: #00c214;
@@ -2117,7 +2120,7 @@ blockquote {
   text-decoration: none;
 }
 .bottomfunction .data ul li a:hover {
-  color: #C00;
+  color: #c00;
   text-decoration: underline;
 }
 .bottomfunction .data ul li:last-child {
