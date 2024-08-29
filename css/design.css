@@ -1590,7 +1590,7 @@ blockquote {
   right: 1%;
   transition: 0.3s ease-out;
   display: none;
-  z-index: 99999999;
+  z-index: 999;
   font-size: 0;
 }
 
@@ -1613,7 +1613,7 @@ blockquote {
   right: 6%;
   transition: 0.3s ease-out;
   display: none;
-  z-index: 99999999;
+  z-index: 999;
   font-size: 1.25em;
 }
 @media (max-width: 991px) {
