@@ -33,7 +33,6 @@
 <body><a class="goCenter" href="#mainContent" tabindex="2">按 Enter 到主內容區</a>
     <!-- header -->
     <section id="Header">
-        <div class="accesskey hidden-xs"><a href="#" title="header" id="accesskeyU" accesskey="U" tabindex="1">:::</a></div>
         <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="row">
@@ -41,8 +40,9 @@
                     <div class="navbar-header">
                         <!-- 左側 -->
                         <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#offcanvas-left"> <span class="sr-only">Toggle navigation</span><i
-                                class="icon-menu"></i> </button>
-                        <a class="Logo" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"> </a>
+                                class="icon-menu"></i>
+                        </button>
+                        <h1><a class="Logo" href="index.html"><img src="images/logo_new.png" alt="" class="img-responsive"> </a></h1>
                         <!-- 右側 -->
                         <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#offcanvas-right"> <span class="sr-only">Toggle navigation</span><i
                                 class="icon-search"></i> </button>
@@ -50,13 +50,15 @@
                     <!--其他選單 收合右側-->
                     <div class="collapse navbar-collapse" id="offcanvas-right" role="navigation">
                         <div class="Navigation">
+                            <div class="accesskey hidden-xs"><a href="#aU" title="header" id="aU" accesskey="U" tabindex="2">:::</a></div>
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">網站導覽</a></li>
-                                <li><a href="#">環保e言堂(局長信箱)</a></li>
-                                <li><a href="#">常見問題</a></li>
-                                <li><a href="#">網站導覽</a></li>
-                                <!-- <li><a href="#">RSS</a></li>
-              <li><a href="#">English</a></li> -->
+                                <li class="active"><a href="#" tabindex="3">回頁首</a></li>
+                                <li><a href="#" tabindex="4">網站導覽</a></li>
+                                <li><a href="#" tabindex="5">意見信箱</a></li>
+                                <li><a href="#" tabindex="6">雙語詞彙</a></li>
+                                <li><a href="#" tabindex="7">常見問答</a></li>
+                                <li><a href="#" tabindex="8">環保署</a></li>
+                                <li><a href="#" tabindex="9">English</a></li>
                             </ul>
                         </div>
                         <!--search-->
@@ -79,90 +81,216 @@
                 <div class="collapse navbar-collapse" id="offcanvas-left" role="navigation">
                     <div class="MainMenu">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <!--First-->
-                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">關於本局<b class="caret"></b></a>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="關於本局">關於本局<b
+                                        class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" title="">本局沿革 </a></li>
-                                    <li><a href="#" title="">本局願景</a></li>
-                                    <li><a href="#" title="">組織介紹</a></li>
-                                    <li><a href="#" title="">本局願景</a></li>
-                                    <li><a href="#" title="">局處執掌</a></li>
-                                    <li><a href="#" title="">重大政策</a></li>
-                                    <li><a href="#" title="">施政重點</a></li>
-                                    <li><a href="#" title="">本局位置</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown ">
-                                <!--First-->
-                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">訊息公告<b class="caret"></b></a>
-                                <ul class="dropdown-menu dropdown-submenu">
-                                    <!--second-->
-                                    <li><a href="#" title="">本局公告</a></li>
-                                    <li><a href="#" title="">環保署公告</a></li>
-                                    <li><a href="#" title="">環境用藥公告</a></li>
-                                    <li><a href="#" title="">環保專案成果報告</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <!--First-->
-                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">業務專區<b class="caret"></b></a>
-                                <ul class="dropdown-menu ">
-                                    <li class="dropdown dropdown-submenu"><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown">毒性化學物質</a>
+                                    <li><a href="np-2-1.html" title="本局簡介">本局簡介</a></li>
+                                    <li><a href="np-11-1.html" title="局長簡介">局長簡介</a></li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-12-1.html" title="組織職掌">組織職掌</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#" title="">毒性化學物質簡介</a></li>
-                                            <li><a href="#" title="">毒性化學物質分類管理架構</a></li>
-                                            <li><a href="#" title="">毒性化學物質一覽表及運作管理事項</a></li>
-                                            <li><a href="#" title="">毒性化學物質安全資料表及GHS</a></li>
-                                            <li><a href="#" title="">毒性化學物質專業技術管理人員</a></li>
+                                            <li><a href="np-13-1.html" title="組織及業務介紹">組織及業務介紹</a></li>
+                                            <li><a href="lp-14-1.html" title="主管學經歷簡介">主管學經歷簡介</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown dropdown-submenu"><a href="#" title="" class="dropdown-toggle" data-toggle="dropdown">化學物質登錄</a>
+                                    <li class="dropdown dropdown-submenu"><a href="np-15-1.html" title="重大政策">重大政策</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#" title="">毒性化學物質簡介</a></li>
-                                            <li><a href="#" title="">毒性化學物質分類管理架構</a></li>
-                                            <li><a href="#" title="">毒性化學物質一覽表及運作管理事項</a></li>
-                                            <li><a href="#" title="">毒性化學物質安全資料表及GHS</a></li>
-                                            <li><a href="#" title="">毒性化學物質專業技術管理人員</a></li>
+                                            <li><a href="np-122-1.html" title="本局重大政策">本局重大政策</a></li>
+                                            <li><a href="lp-123-1.html" title="政策懶人包">政策懶人包</a></li>
+                                            <li><a href="np-239-1.html" title="工作成果">工作成果</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#" title="">勾稽查核與輔導訪查</a></li>
-                                    <li><a href="#" title="">危害性化學物質災害防救</a></li>
-                                    <li><a href="#" title="">環境用藥管理</a></li>
+                                    <li><a href="np-16-1.html" title="施政重點">施政重點</a></li>
+                                    <li><a href="lp-244-1.html" title="大事紀">大事紀</a></li>
+                                    <li><a href="lp-17-1.html" title="雙語詞彙">雙語詞彙</a></li>
+                                    <li><a href="lp-18-1.html" title="業務聯絡資訊">業務聯絡資訊</a></li>
+                                    <li><a href="np-19-1.html" title="局徽設計說明">局徽設計說明</a></li>
+                                    <li><a href="np-20-1.html" title="本局位置">本局位置</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <!--First-->
-                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">便民服務<b class="caret"></b></a>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="訊息公告">訊息公告<b
+                                        class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" title="">線上服務</a></li>
-                                    <li><a href="#" title="">教育宣導</a></li>
-                                    <li><a href="#" title="">影音專區</a></li>
-                                    <li><a href="#" title="">下載專區</a></li>
-                                    <li><a href="#" title="">常見問答</a></li>
-                                    <li><a href="#" title="">相關連結</a></li>
-                                    <li><a href="#" title="">訂閱電子報</a></li>
+                                    <li><a href="lp-21-1.html" title="最新消息">最新消息</a></li>
+                                    <li><a href="lp-286-1.html" title="本局重要活動行程">本局重要活動行程</a></li>
+                                    <li><a href="lp-22-1.html" title="招標資訊">招標資訊</a></li>
+                                    <li><a href="lp-23-1.html" title="新聞發布">新聞發布</a></li>
+                                    <li><a href="lp-150-1.html" title="爭議訊息澄清專區">爭議訊息澄清專區</a></li>
+                                    <li><a href="lp-24-1.html" title="公告會議">公告會議</a></li>
+                                    <li><a href="lp-26-1.html" title="就業資訊">就業資訊</a></li>
+                                    <li><a href="lp-27-1.html" title="宣導影音">宣導影音</a></li>
+                                    <li><a href="lp-28-1.html" title="活動剪影">活動剪影</a></li>
+                                    <li><a href="lp-109-1.html" title="政策宣導">政策宣導</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <!--First-->
-                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">政府資訊公開<b class="caret"></b></a>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="業務專區">業務專區<b
+                                        class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" title="">行政院環境保護署資訊公開要點</a></li>
-                                    <li><a href="#" title="">預算及會計月報</a></li>
-                                    <li><a href="#" title="">性別平等專區</a></li>
-                                    <li><a href="#" title="">人權專區</a></li>
-                                    <li><a href="#" title="">環境統計資料庫</a></li>
-                                    <li><a href="#" title="">業務標準作業流程</a></li>
-                                    <li><a href="#" title="">行政院環保署Open Data資料集</a></li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-29-1.html" title="毒性化學物質">毒性化學物質</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="lp-91-1.html" title="公告毒性化學物質">公告毒性化學物質</a></li>
+                                            <li><a href="np-92-1.html" title="毒性化學物質簡介">毒性化學物質簡介</a></li>
+                                            <li><a href="lp-93-1.html" title="毒性化學物質一覽表及運作管理事項">毒性化學物質一覽表及運作管理事項</a></li>
+                                            <li><a href="lp-95-1.html" title="毒性化學物質專業技術管理人員">毒性化學物質專業技術管理人員</a></li>
+                                            <li><a href="https://flora2.epa.gov.tw/MainSite/" title="毒性化學物質登記申報系統(另開新視窗)" target="_blank">毒性化學物質登記申報系統</a></li>
+                                            <li><a href="lp-97-1.html" title="毒性化學物質申請／報相關規定">毒性化學物質申請／報相關規定</a></li>
+                                            <li><a href="/np-124-1.html" title="毒性化學物質運送管理">毒性化學物質運送管理</a></li>
+                                            <li><a href="np-326-1.html" title="毒性化學物質釋放量公開資料">毒性化學物質釋放量公開資料</a></li>
+                                            <li><a href="lp-137-1.html" title="相關連結">相關連結</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-266-1.html" title="毒性化學物質安全資料表及危害標示">毒性化學物質安全資料表及危害標示</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://toxicdms.epa.gov.tw/Chm_/Chm_index.aspx?vp=MSDS" title="毒性化學物質安全資料表(另開新視窗)" target="_blank">毒性化學物質安全資料表</a></li>
+                                            <li><a href="lp-271-1.html" title="毒性化學物質危害標示">毒性化學物質危害標示</a></li>
+                                            <li><a href="np-272-1.html" title="簡易毒災應變-東南亞國家版本">簡易毒災應變-東南亞國家版本</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-30-1.html" title="化學物質登錄">化學物質登錄</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="lp-240-1.html" title="登錄制度歷程及政策目標">登錄制度歷程及政策目標</a></li>
+                                            <li><a href="lp-241-1.html" title="化學物質登錄制度介紹">化學物質登錄制度介紹</a></li>
+                                            <li><a href="np-79-1.html" title="化學物質登錄專用名詞">化學物質登錄專用名詞</a></li>
+                                            <li><a href="np-80-1.html" title="既有化學物質清冊">既有化學物質清冊</a></li>
+                                            <li><a href="https://tcscachemreg.epa.gov.tw/Epareg/content/masterpage/index.aspx" title="化學物質登錄平臺(另開新視窗)" target="_blank">化學物質登錄平臺</a></li>
+                                            <li><a href="https://tcscachemreg.epa.gov.tw/Epareg/OpenData/content/NewChemistPage.aspx" title="化學物質核准登錄資訊公開(另開新視窗)" target="_blank">化學物質核准登錄資訊公開</a></li>
+                                            <li><a href="http://chemreg-border.epa.gov.tw/content/info/index.aspx" title="貨品通關事前聲明確認平臺(另開新視窗)" target="_blank">貨品通關事前聲明確認平臺</a></li>
+                                            <li><a href="lp-242-1.html" title="國際研討會成果">國際研討會成果</a></li>
+                                            <li><a href="lp-136-1.html" title="相關連結">相關連結</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="lp-31-1.html" title="勾稽查核與輔導訪查">勾稽查核與輔導訪查</a></li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-32-1.html" title="危害性化學物質災害防制">危害性化學物質災害防制</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="np-99-1.html" title="毒性化學物質災害防救業務計畫">毒性化學物質災害防救業務計畫</a></li>
+                                            <li><a href="np-101-1.html" title="中央毒災防救體系">中央毒災防救體系</a></li>
+                                            <li><a href="np-100-1.html" title="毒性化學物質危害預防整備">毒性化學物質危害預防整備</a></li>
+                                            <li><a href="lp-140-1.html" title="全國毒災演練歷年資料">全國毒災演練歷年資料</a></li>
+                                            <li><a href="np-104-1.html" title="全國性毒性化學物質聯防組織">全國性毒性化學物質聯防組織</a></li>
+                                            <li><a href="lp-120-1.html" title="直轄市、縣市政府第三類毒性化學物質危害及預防應變計畫摘要公告資訊連結">直轄市、縣市政府第三類毒性化學物質危害及預防應變計畫摘要公告資訊連結</a></li>
+                                            <li><a href="lp-124-1.html" title="毒性化學物質運送管理">毒性化學物質運送管理</a></li>
+                                            <li><a href="np-105-1.html" title="案例事故資訊分享">案例事故資訊分享</a></li>
+                                            <li><a href="np-103-1.html" title="毒性化學物質災害事故應變車輛管理">毒性化學物質災害事故應變車輛管理</a></li>
+                                            <li><a href="lp-130-1.html" title="相關連結">相關連結</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-33-1.html" title="環境用藥管理">環境用藥管理</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="np-107-1.html" title="環境用藥管理及簡介">環境用藥管理及簡介</a></li>
+                                            <li><a href="np-108-1.html" title="環境用藥安全使用宣導">環境用藥安全使用宣導</a></li>
+                                            <li><a href="np-111-1.html" title="環境用藥許可證及病媒防治業網路查詢系統">環境用藥許可證及病媒防治業網路查詢系統</a></li>
+                                            <li><a href="np-112-1.html" title="環境用藥管理資訊系統">環境用藥管理資訊系統</a></li>
+                                            <li><a href="np-113-1.html" title="環境用藥申請規定">環境用藥申請規定</a></li>
+                                            <li><a href="lp-114-1.html" title="環境用藥管理統計">環境用藥管理統計</a></li>
+                                            <li><a href="lp-115-1.html" title="環境用藥不安全產品資訊">環境用藥不安全產品資訊</a></li>
+                                            <li><a href="lp-116-1.html" title="環境用藥查核成果">環境用藥查核成果</a></li>
+                                            <li><a href="lp-117-1.html" title="環境用藥行政規則命令">環境用藥行政規則命令</a></li>
+                                            <li><a href="/lp-36-1-xCat-01.html" title="表單下載">表單下載</a></li>
+                                            <li><a href="lp-129-1.html" title="教育宣導">教育宣導</a></li>
+                                            <li><a href="lp-135-1.html" title="相關連結">相關連結</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="np-302-1.html" title="輸入規定「801-5」、「837-6」申請作業">輸入規定「801-5」、「837-6」申請作業</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <!--First-->
-                                <a href="#" data-hover="dropdown" data-toggle="dropdown" class="active dropdown-toggle" title="" aria-expanded="false">法規專區<b class="caret"></b></a>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="便民服務">便民服務<b
+                                        class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#" title="">主管法規查詢系統 </a></li>
-                                    <li><a href="#" title="">全國法規資料庫</a></li>
+                                    <li><a href="lp-34-1.html" title="線上申辦">線上申辦</a></li>
+                                    <li><a href="https://epamail.epa.gov.tw/front/mailboxhome" title="意見信箱(另開新視窗)" target="_blank">意見信箱</a></li>
+                                    <li><a href="lp-36-1.html" title="表單下載">表單下載</a></li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-37-1.html" title="廉政園地">廉政園地</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="np-38-1.html" title="業務簡介">業務簡介</a></li>
+                                            <li><a href="lp-39-1.html" title="廉政法規">廉政法規</a></li>
+                                            <li><a href="lp-40-1.html" title="廉政宣導">廉政宣導</a></li>
+                                            <li><a href="lp-41-1.html" title="財產申報">財產申報</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="lp-42-1.html" title="常見問答">常見問答</a></li>
+                                    <li><a href="lp-43-1.html" title="訂閱電子報">訂閱電子報</a></li>
+                                    <li><a href="np-301-1.html" title="個人資料保護專區">個人資料保護專區</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="教育宣導">教育宣導<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="lp-84-1.html" title="災害應變宣導">災害應變宣導</a></li>
+                                    <li><a href="np-85-1.html" title="社區知情權專區">社區知情權專區</a></li>
+                                    <li><a href="/lp-27-1-xCat-02.html" title="教育宣導影音">教育宣導影音</a></li>
+                                    <li><a href="lp-89-1.html" title="文宣品">文宣品</a></li>
+                                    <li><a href="lp-118-1.html" title="本局出版品">本局出版品</a></li>
+                                    <li><a href="https://toxicdms.epa.gov.tw/LearnPassport/Class/digit" title="數位學堂(另開新視窗)" target="_blank">數位學堂</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="行政公開資訊">行政公開資訊<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="lp-44-1.html" title="資訊公開要點">資訊公開要點</a></li>
+                                    <li class="dropdown dropdown-submenu"><a href="np-45-1.html" title="預算、決算及會計月報">預算、決算及會計月報</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="lp-47-1.html" title="預算書">預算書</a></li>
+                                            <li><a href="lp-265-1.html" title="決算書">決算書</a></li>
+                                            <li><a href="lp-48-1.html" title="會計月報">會計月報</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="lp-148-1.html" title="支付或接受之補助">支付或接受之補助</a></li>
+                                    <li><a href="lp-149-1.html" title="廣告經費執行情形">廣告經費執行情形</a></li>
+                                    <li><a href="https://www.epa.gov.tw/np.asp?ctNode=31713&mp=epa" title="性別平等專區(另開新視窗)" target="_blank">性別平等專區</a></li>
+                                    <li><a href="https://www.epa.gov.tw/np.asp?ctNode=34312&mp=epa" title="人權專區(另開新視窗)" target="_blank">人權專區</a></li>
+                                    <li><a href="https://stat.epa.gov.tw/" title="環保統計查詢網(建議Chrome開啟)(另開新視窗)" target="_blank">環保統計查詢網(建議Chrome開啟)</a></li>
+                                    <li><a href="https://opendata.epa.gov.tw/Data/KeywordQuery?QueryDataProvide=%E6%AF%92%E7%89%A9%E5%8F%8A%E5%8C%96%E5%AD%B8%E7%89%A9%E8%B3%AA%E5%B1%80"
+                                            title="OpenData環境資料開放平台(另開新視窗)" target="_blank">OpenData環境資料開放平台</a></li>
+                                    <li><a href="sp-research-list-1-20-1.html" title="研究報告">研究報告</a></li>
+                                    <li><a href="lp-264-1.html" title="內部控制聲明書">內部控制聲明書</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="法規專區">法規專區<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu"><a href="np-54-1.html" title="主管法規查詢">主管法規查詢</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://oaout.epa.gov.tw/law/LawCategoryMain.aspx?CategoryID=15" title="毒化物管理(另開新視窗)" target="_blank">毒化物管理</a></li>
+                                            <li><a href="https://oaout.epa.gov.tw/law/LawCategoryMain.aspx?CategoryID=17" title="環境用藥管理(另開新視窗)" target="_blank">環境用藥管理</a></li>
+                                            <li><a href="lp-57-1.html" title="其他法規">其他法規</a></li>
+                                            <li><a href="lp-58-1.html" title="草案預告">草案預告</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://oaout.epa.gov.tw/law/" title="環保相關法規(另開新視窗)" target="_blank">環保相關法規</a></li>
+                                    <li><a href="http://law.moj.gov.tw/" title="全國法規資料庫(另開新視窗)" target="_blank">全國法規資料庫</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="證照申請">證照申請<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://mdc.epa.gov.tw/MDC/" title="環境用藥管理資訊系統(另開新視窗)" target="_blank">環境用藥管理資訊系統</a></li>
+                                    <li><a href="https://flora2.epa.gov.tw/Report/LogIn/Index.aspx" title="毒性化學物質許可證管理系統(另開新視窗)" target="_blank">毒性化學物質許可證管理系統</a></li>
+                                    <li><a href="https://toxicgps.epa.gov.tw/GpsZone/" title="毒性化學物質運送車輛監控追蹤系統(另開新視窗)" target="_blank">毒性化學物質運送車輛監控追蹤系統</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="食安源頭管理">食安源頭管理<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="np-248-1.html" title="食安一環-食安風險化學物質源頭管理">食安一環-食安風險化學物質源頭管理</a></li>
+                                    <li><a href="lp-249-1.html" title="食品五環護食安，為學校午餐把關">食品五環護食安，為學校午餐把關</a></li>
+                                    <li><a href="lp-263-1.html" title="具食安風險之化學物質">具食安風險之化學物質</a></li>
+                                    <li><a href="lp-250-1.html" title="食安宣導影片">食安宣導影片</a></li>
+                                    <li><a href="lp-251-1.html" title="食安政府機關網站連結">食安政府機關網站連結</a></li>
+                                    <li><a href="np-281-1.html" title="化工原料業及兼售食品添加物業者自主管理作業指引">化工原料業及兼售食品添加物業者自主管理作業指引</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" href="lp-328-1.html" title="業務網站">業務網站</a></li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" href="lp-329-1.html" title="查詢服務">查詢服務</a></li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" href="lp-327-1.html" title="主題專區">主題專區</a></li>
+                            <li class="dropdown"><a class="active dropdown-toggle" aria-expanded="false" data-hover="dropdown" data-toggle="dropdown" href="javascript:;" title="相關連結">相關連結<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.epa.gov.tw/" title="行政院環境保護署(另開新視窗)" target="_blank">行政院環境保護署</a></li>
+                                    <li><a href="https://epq.epa.gov.tw/" title="環保專案成果報告資訊系統(另開新視窗)" target="_blank">環保專案成果報告資訊系統</a></li>
+                                    <li><a href="lp-62-1.html" title="國內外化學物質相關網站">國內外化學物質相關網站</a></li>
+                                    <li><a href="lp-63-1.html" title="環保署相關機構">環保署相關機構</a></li>
+                                    <li><a href="lp-64-1.html" title="政府相關網站">政府相關網站</a></li>
+                                    <li><a href="https://www.epa.gov.tw/lp.asp?ctNode=32966&CtUnit=1980&BaseDSD=7&mp=epa" title="環保團體網站(民間)(另開新視窗)" target="_blank">環保團體網站(民間)</a></li>
+                                    <li><a href="https://tcsbhome.epa.gov.tw/" title="myTCSB@anywhere(另開新視窗)" target="_blank">myTCSB@anywhere</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -196,7 +324,7 @@
                         <noscript> 字級大小SCRIPT，如您的瀏覽器不支援，可利用鍵盤 Ctrl + (+)放大 (-)縮小來改變字型大小。 </noscript>
                         <!--cp start -->
                         <section class="cp" id="ContentPage">
-                            <h1 class="poison_h1">滴滴涕<span>4,4-Dichlorodiphenyl-trichloroethane(DDT)</span></h1>
+                            <h2 class="title poison_h1">滴滴涕<span>4,4-Dichlorodiphenyl-trichloroethane(DDT)</span></h2>
                             <article>
                                 <div class="sort_number"><span class="poison01">1</span><span class="poison02">2</span><span class="poison03">3</span><span class="poison04">4</span><span
                                         class="attention">關注</span></div>
