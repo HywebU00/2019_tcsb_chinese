@@ -2992,7 +2992,7 @@ a:focus {
 /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
 ::-webkit-scrollbar-thumb {
   /* This is the EXACT color of Mac OS scrollbars. 
-   Yes, I pulled out digital color meter */
+     Yes, I pulled out digital color meter */
   background: rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 100px;
   background-clip: padding-box;
@@ -3567,7 +3567,7 @@ a:focus {
   margin: 1em 0;
   padding: 0 30px 0 40px;
   display: block;
-  border-bottom: 1px dotted #CCC;
+  border-bottom: 1px dotted #ccc;
   position: relative;
   text-align: left;
 }
@@ -4065,8 +4065,8 @@ a:focus {
 .mp_banner .btn-more {
   display: block;
   width: 150px;
-  border-color: #DDD;
-  background-color: #DDD;
+  border-color: #ddd;
+  background-color: #ddd;
   color: #333;
   padding: 7px 0;
   font-size: 1em;
@@ -4075,7 +4075,7 @@ a:focus {
   float: right;
 }
 .mp_banner .btn-more:hover, .mp_banner .btn-more:focus {
-  color: #FFF !important;
+  color: #fff !important;
   background-color: #367c8d;
 }
 @media (max-width: 767px) {
@@ -4087,7 +4087,7 @@ a:focus {
 .mp_banner h2 {
   position: absolute;
   z-index: 999;
-  color: #FFF;
+  color: #fff;
   bottom: -10px;
   left: 0%;
   width: 100%;
@@ -4098,6 +4098,8 @@ a:focus {
   overflow: hidden;
   padding: 0px 30px;
   background: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  line-height: 1.75em;
 }
 @media (max-width: 767px) {
   .mp_banner h2 {
@@ -4203,7 +4205,7 @@ a:focus {
   list-style-type: none;
 }
 .service .follow_news ul li {
-  border-bottom: 1px dotted #CCC;
+  border-bottom: 1px dotted #ccc;
 }
 .service .follow_news ul li a {
   display: block;
@@ -4236,7 +4238,7 @@ a:focus {
 }
 .service .follow_news .more a {
   padding: 0;
-  background-color: #DDD;
+  background-color: #ddd;
   color: #333;
   padding: 5px 15px;
   border-radius: 5px;
@@ -4278,7 +4280,7 @@ a:focus {
 }
 .service ul li a {
   display: block;
-  color: #FFF;
+  color: #fff;
   padding: 15px 10px 15px 50px;
   text-align: left;
   width: 100%;
@@ -4413,7 +4415,7 @@ a:focus {
   .servicebanner {
     max-width: 100%;
     /* margin-top: 20px;
-        margin-bottom: 30px; */
+            margin-bottom: 30px; */
   }
 }
 @media screen and (orientation: landscape) {
@@ -5059,7 +5061,7 @@ a:focus {
   }
 }
 .common_links .btn-more:hover, .common_links .btn-more:focus {
-  color: #FFF !important;
+  color: #fff !important;
   border-color: #132b31;
   background-color: #214b56;
 }
@@ -6145,18 +6147,19 @@ a:focus {
     border-radius: 0 0 5px 5px;
   }
 }
-.listphoto03 ul li .content h2 {
+.listphoto03 ul li .content .title {
   font-size: 1.375em;
   margin: 0 0 15px;
   padding: 0 0 7px;
   clear: both !important;
   line-height: 1.4em;
   border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }
-.listphoto03 ul li .content h2 a {
+.listphoto03 ul li .content .title a {
   color: #367c8d;
 }
-.listphoto03 ul li .content h2 a:hover {
+.listphoto03 ul li .content .title a:hover {
   color: #e30000;
   text-decoration: none;
 }
@@ -6365,11 +6368,11 @@ a:focus {
   display: block;
   color: #333;
 }
-.listphoto04 .themeblock a span h2 {
+.listphoto04 .themeblock a span .title {
   margin: 0 0 10px;
   padding: 0;
   text-align: center;
-  font-size: 1.125em;
+  font-size: 1.25em;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -6378,6 +6381,7 @@ a:focus {
   -webkit-box-orient: vertical;
   line-height: 1.7em;
   height: 1.7em;
+  font-weight: bold;
 }
 .listphoto04 .themeblock a span .extension {
   text-align: center;

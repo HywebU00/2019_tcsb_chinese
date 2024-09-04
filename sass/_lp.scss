@@ -401,13 +401,14 @@
         @media (max-width: 600px) {
           border-radius: 0 0 5px 5px;
         }
-        h2 {
+        .title {
           font-size: 1.375em;
           margin: 0 0 15px;
           padding: 0 0 7px;
           clear: both !important;
           line-height: 1.4em;
           border-bottom: 1px solid #ccc;
+          font-weight: bold;
           a {
             color: $_primaryColor;
             &:hover {
@@ -614,11 +615,11 @@
         display: block;
         color: #333;
         // width: 100%;
-        h2 {
+        .title {
           margin: 0 0 10px;
           padding: 0;
           text-align: center;
-          font-size: 1.125em;
+          font-size: 1.25em;
           overflow: hidden;
           text-overflow: -o-ellipsis-lastline;
           text-overflow: ellipsis;
@@ -627,6 +628,7 @@
           -webkit-box-orient: vertical;
           line-height: 1.7em; // X 填入行高 px 值
           height: calc(1.7em * 1);
+          font-weight: bold;
         }
         .extension {
           text-align: center;
