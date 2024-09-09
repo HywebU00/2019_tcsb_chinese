@@ -178,8 +178,14 @@
         // height: 40px;
         border-radius: 5px;
         text-align: left;
+        position: relative;
         @media (max-width: 530px) {
           width: 100%;
+        }
+        label {
+          font-size: 0;
+          position: absolute;
+          left: 0;
         }
         select {
           line-height: 2em;
@@ -226,6 +232,9 @@
         }
         @media (max-width: 530px) {
           width: 100%;
+        }
+        label {
+          font-size: 0;
         }
         input[type='text'] {
           color: #fff;

@@ -3154,11 +3154,17 @@ a:focus {
   margin-bottom: 10px;
   border-radius: 5px;
   text-align: left;
+  position: relative;
 }
 @media (max-width: 530px) {
   .propagandamovie .propagandablock .moviedata .selectblock {
     width: 100%;
   }
+}
+.propagandamovie .propagandablock .moviedata .selectblock label {
+  font-size: 0;
+  position: absolute;
+  left: 0;
 }
 .propagandamovie .propagandablock .moviedata .selectblock select {
   line-height: 2em;
@@ -3195,6 +3201,9 @@ a:focus {
   .propagandamovie .propagandablock .moviedata .searchblock {
     width: 100%;
   }
+}
+.propagandamovie .propagandablock .moviedata .searchblock label {
+  font-size: 0;
 }
 .propagandamovie .propagandablock .moviedata .searchblock input[type=text] {
   color: #fff;
