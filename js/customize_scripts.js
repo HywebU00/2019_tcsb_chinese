@@ -345,14 +345,15 @@ jQuery(document).ready(function () {
         var _tabItemNow = $(this).parent(),
           tvp = _tab.offset().top,
           tabIndex = _tabItemNow.index() / 2,
-          scollDistance = tvp + tabItemHeight * tabIndex - hh;
+          //scollDistance = tvp + tabItemHeight * tabIndex - hh;		  
+		  scollDistance = tvp + tabItemHeight * tabIndex;		  
         _tabItem.removeClass('active');
         _tabItemNow.addClass('active');
         if (ww <= wwSmall) {
           if (!$(this).parents('.tabs').hasClass('albumType4')) {
             _tabItem.not('.active').next().slideUp();
             _tabItemNow.next().slideDown();
-            $('html,body').stop(true, false).animate({ scrollTop: scollDistance });
+            $('html,body').stop(true, false).animate({ scrollTop: scollDistance });		
           }
         } else {
           _tabItem.not('.active').next().hide();
@@ -551,4 +552,37 @@ $(function () {
       l10n: Fancybox.l10n.zh_TW,
     });
   }
+});
+//---20250416,for bootstrap 5 upgrade, mobile menu and search display.
+$(function () {	
+	if( $(window).width() <= 768 ){
+		$('#offcanvas-left').removeClass('collapse');
+		$('#offcanvas-left').hide();
+		$('#offcanvas-right').removeClass('collapse');
+		$('#offcanvas-right').hide();		
+		$('.MainMenu > ul.nav > li.dropdown > a').each(function(){
+			$(this).removeAttr('data-bs-toggle');
+		});				
+		$('.MainMenu > ul.nav > li.dropdown > a').on('click', function(e){
+			e.preventDefault();
+			$this = $(this);
+			$title = $this.attr('title');			
+			$this.parent().parent('ul.nav').children('li.dropdown').each(function(){				
+				if($(this).children('a').attr('title') != $title){
+					$(this).children('ul').hide();
+				}
+			});			
+			$this.siblings('ul').toggle();
+			// when no children
+			if($this.siblings('ul').length == 0){
+				location.href = $this.attr('href');
+			}
+		});
+	}	
+	$('#menubtn').on('click', function(){
+		$('#offcanvas-left').toggle();
+	});
+	$('#searchbtn').on('click', function(){
+		$('#offcanvas-right').toggle();
+	});
 });
